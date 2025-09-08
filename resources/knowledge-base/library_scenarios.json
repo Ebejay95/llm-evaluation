@@ -1,0 +1,42 @@
+[
+  {
+    "id": "scn-ransomware-it-ot",
+    "name": "Ransomware (IT/OT)",
+    "annual_frequency": 0.25,
+    "impact_pct_revenue": 0.04,
+    "industries": ["manufacturing", "healthcare", "retail"],
+    "tags": ["ot", "production-stop", "data-encryption"],
+    "control_ids": ["ctl-edr", "ctl-backup-immut", "ctl-mfa", "ctl-patch", "ctl-ir-plan"],
+    "framework_refs": ["ISO27001:A.8.13", "ISO27001:A.8.16", "NIS2:Art21"]
+  },
+  {
+    "id": "scn-bec-invoice",
+    "name": "Business Email Compromise (Rechnung/CEO-Fraud)",
+    "annual_frequency": 0.35,
+    "impact_pct_revenue": 0.01,
+    "industries": ["manufacturing", "finance", "services"],
+    "tags": ["email", "fraud"],
+    "control_ids": ["ctl-mfa", "ctl-awareness", "ctl-secure-email", "ctl-sod-finance"],
+    "framework_refs": ["ISO27001:A.5.17", "ISO27001:A.8.32", "NIS2:Art21"]
+  },
+  {
+    "id": "scn-ot-outage",
+    "name": "OT-Ausfall (ICS/SCADA Störung)",
+    "annual_frequency": 0.15,
+    "impact_pct_revenue": 0.05,
+    "industries": ["manufacturing"],
+    "tags": ["ot", "ics", "downtime"],
+    "control_ids": ["ctl-network-seg", "ctl-allowlisting", "ctl-backup-immut", "ctl-ir-ot"],
+    "framework_refs": ["ISO27001:A.8.20", "ISO27001:A.8.28", "NIS2:Art21"]
+  },
+  {
+    "id": "scn-supplychain",
+    "name": "Supply-Chain Kompromittierung (Third-Party/Vendor)",
+    "annual_frequency": 0.2,
+    "impact_pct_revenue": 0.02,
+    "industries": ["manufacturing", "software", "services"],
+    "tags": ["third-party", "updates", "vendor-risk"],
+    "control_ids": ["ctl-vendor-risk", "ctl-code-signing", "ctl-mfa", "ctl-edr"],
+    "framework_refs": ["ISO27001:A.5.19", "ISO27001:A.5.20", "NIS2:Art21"]
+  }
+]

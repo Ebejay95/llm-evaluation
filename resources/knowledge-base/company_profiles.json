@@ -1,0 +1,20 @@
+[
+  {
+    "id": "c-001",
+    "name": "ACME Manufacturing GmbH",
+    "industry": "manufacturing",
+    "revenue_eur": 10000000,
+    "employees": 250,
+    "has_ot": true,
+    "regions": ["EU"]
+  },
+  {
+    "id": "c-002",
+    "name": "SaaSCo Europe AG",
+    "industry": "software",
+    "revenue_eur": 22000000,
+    "employees": 120,
+    "has_ot": false,
+    "regions": ["EU", "US"]
+  }
+]
