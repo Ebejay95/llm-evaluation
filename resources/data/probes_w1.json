@@ -1,0 +1,12 @@
+[
+  {"company_id":"c-001","expected_top_scenarios":["Ransomware (IT/OT)","OT-Ausfall (ICS/SCADA Störung)","Supply-Chain Kompromittierung (Third-Party/Vendor)"]},
+  {"company_id":"c-002","expected_top_scenarios":["Supply-Chain Kompromittierung (Third-Party/Vendor)","Business Email Compromise (Rechnung/CEO-Fraud)","Cloud-Fehlkonfiguration (Public S3/Blob)"]},
+  {"company_id":"c-003","expected_top_scenarios":["Ransomware (IT/OT)","OT-Ausfall (ICS/SCADA Störung)","Spear-Phishing Kampagne (Credential Theft)"]},
+  {"company_id":"c-004","expected_top_scenarios":["Business Email Compromise (Rechnung/CEO-Fraud)","Cloud-Fehlkonfiguration (Public S3/Blob)","DDoS gegen Kundenportale/API"]},
+  {"company_id":"c-005","expected_top_scenarios":["Ransomware (IT/OT)","Supply-Chain Kompromittierung (Third-Party/Vendor)","Spear-Phishing Kampagne (Credential Theft)"]},
+  {"company_id":"c-006","expected_top_scenarios":["Business Email Compromise (Rechnung/CEO-Fraud)","Insider Fraud (Finance)","Cloud-Fehlkonfiguration (Public S3/Blob)"]},
+  {"company_id":"c-007","expected_top_scenarios":["Ransomware (IT/OT)","OT-Ausfall (ICS/SCADA Störung)","Supply-Chain Kompromittierung (Third-Party/Vendor)"]},
+  {"company_id":"c-008","expected_top_scenarios":["DDoS gegen Kundenportale/API","Spear-Phishing Kampagne (Credential Theft)","Supply-Chain Kompromittierung (Third-Party/Vendor)"]},
+  {"company_id":"c-009","expected_top_scenarios":["OT-Ausfall (ICS/SCADA Störung)","OT-Sicherheitsvorfall (Safety/Process Hazard)","Supply-Chain Kompromittierung (Third-Party/Vendor)"]},
+  {"company_id":"c-010","expected_top_scenarios":["Supply-Chain Kompromittierung (Third-Party/Vendor)","Cloud-Fehlkonfiguration (Public S3/Blob)","Spear-Phishing Kampagne (Credential Theft)"]}
+]

@@ -20,3 +20,5 @@ def load_scenarios() -> List[Dict[str, Any]]:
 
 def load_controls() -> Dict[str, Dict[str, Any]]:
     arr = _load("library_controls.json")
+    return {c["id"]: c for c in arr}
+
