@@ -34,3 +34,10 @@ clean:       ## Aufräumen (Volumes & lokale Images)
 
 fclean:       ## Aufräumen (Volumes & lokale Images)
 	docker system prune -a --volumes
+
+docker-prepare:
+	mkdir -p ~/.docker
+	echo '{"cliPluginsExtraDirs":["/Users/$(USER)/.brew/lib/docker/cli-plugins"]}' > ~/.docker/config.json
+	brew install docker-compose
+	brew install colima docker
+	colima start --memory 10 --cpu 4
