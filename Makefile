@@ -26,7 +26,7 @@ shell:          ## Shell in die App
 shell-ollama:   ## Shell in den Ollama-Container
 	$(COMPOSE) exec $(OLLAMA) bash
 
-run:         ## Einmaliger App-Run (ARGS="python week_01_exploration.py --as-json")
+run:
 	$(COMPOSE) run --rm $(APP) bash -lc "$$ARGS"
 
 clean:       ## Aufräumen (Volumes & lokale Images)
