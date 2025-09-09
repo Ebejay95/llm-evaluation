@@ -26,6 +26,7 @@ def llm_security_check(company: Dict[str, Any], scenarios: List[Dict[str, Any]],
     company_json = json.dumps(company, ensure_ascii=False)
     scenarios_json = json.dumps(scenarios, ensure_ascii=False)
     controls_json = json.dumps(list(controls.values()), ensure_ascii=False)
+
     return textwrap.dedent(f"""
     COMPANY_JSON:
     {company_json}
@@ -37,11 +38,20 @@ def llm_security_check(company: Dict[str, Any], scenarios: List[Dict[str, Any]],
     {controls_json}
 
     AUFGABE:
-    1) Liefere nur die rohe JSON ohne markdown, wie es eine API tun würde. Nutze die zur Verfügung stehenden Datasets.
-    2) Das JSON enthaellt 1 attribut "recommended_scenarios" mit einem array von scenario ids, die auf das Unternehmen passen.
-    3) Das JSON enthaellt ein Attribut "frameworks" in dem die jeweils passende Vorgaben zu einem scenario anhand seiner id gepsiehcert werden. Diese werden, wenn mehrere gelten mit einem | getrennt.
-    4) Das JSON enthaellt eine Bewertung "score" des Unternehmens in Schulnoten von A, B, C, D, E, F (A unkritisch bis F ultrakritisch)
-    5) Dann kannst du einen einfachen Begruendungstext ohne innere Quotes und Gleiederung mit maximal 100 Woertern erstellen in einem JSON Attribut "analysis"
+    1) Liefere nur die rohe JSON ohne Markdown, wie es eine API tun würde. Pruefe das nach generieung ggf. Nutze die zur Verfügung stehenden Datasets und fülle folgende Struktur auf:
+    {{
+        "recommended_scenarios": ["ARRAY AUS PASSENDEN SCENARIO IDS"],
+        "frameworks": {{
+            "SCENARIO_ID": "NIS2 ARTICLE X <> ISO 27001 CHAPTER X",
+            "SCENARIO_ID": "NIS2 ARTICLE Y <> ISO 27001 CHAPTER Y <> GRPC $YZ"
+        }},
+        "score": "GRADE",
+        "analysis": "EXPLAINATION OF SCORE AND BACKGROUND"
+    }}
+    2) Das JSON enthält ein Attribut mit einem Array von Scenario-IDs, die auf das Unternehmen passen.
+    3) Das JSON enthält ein Attribut "frameworks", in dem die jeweils passenden Vorgaben zu einem Scenario anhand seiner ID gespeichert werden. Mehrere werden mit <> getrennt.
+    4) Das JSON enthält eine Bewertung "score" des Unternehmens in Prozent (100% unkritisch bis 0% ultrakritisch).
+    5) Erstelle einen einfachen Begründungstext ohne innere Quotes und Gliederung (max. 100 Wörter) im Attribut "analysis".
     """).strip()
 
 def build_user_prompt_client_chat(company: Dict[str, Any], scenarios: List[Dict[str, Any]], controls: Dict[str, Dict[str, Any]], user_question: str) -> str:
