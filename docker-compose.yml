@@ -1,0 +1,32 @@
+services:
+  ollama:
+    build:
+      context: .
+      dockerfile: Dockerfile.ollama
+    ports:
+      - "11434:11434"
+    restart: unless-stopped
+    volumes:
+      - ollama:/root/.ollama
+    healthcheck:
+      test: ["CMD","curl","-fsS","http://localhost:11434/api/version"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile.app
+    depends_on:
+      ollama:
+        condition: service_healthy
+    working_dir: /app/resources
+    volumes:
+      - ./resources:/app/resources:rw
+    environment:
+      - PYTHONUNBUFFERED=1
+    command: ["python","week_01_exploration.py","--ids","c-001","--with-llm","--provider","ollama","--ollama-url","http://ollama:11434"]
+
+volumes:
+  ollama:

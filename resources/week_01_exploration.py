@@ -1,5 +1,6 @@
 import json, sys, argparse, os, shlex, subprocess, textwrap, re
 from pathlib import Path
+from typing import Optional
 
 # Farbige Ausgabe (plattformtauglich)
 try:
@@ -28,23 +29,20 @@ class LLMProvider:
         raise NotImplementedError
 
 class OllamaProvider(LLMProvider):
-    """Nur Ollama-CLI über subprocess; Prompt via STDIN (kein -p Flag)."""
-    def __init__(self, model: str = None):
-        self.model = model or os.getenv("OLLAMA_MODEL", "llama3.1")
+    """
+    Nutzt das Ollama-Python-SDK und spricht die API (auch remote).
+    """
+    def __init__(self, model: Optional[str] = None, host: Optional[str] = None):
+        from ollama import Client as _OllamaClient
+        self.model = model or os.getenv("OLLAMA_MODEL", "llama3.2:1b")
+        # Fallback-Reihenfolge: CLI-Arg -> OLLAMA_URL -> OLLAMA_HOST -> Default
+        self.host  = host or os.getenv("OLLAMA_URL") or os.getenv("OLLAMA_HOST") or "http://ollama:11434"
+        self._client = _OllamaClient(host=self.host)
 
     def generate(self, system: str, user: str) -> str:
         prompt = f"System:\n{system}\n\nUser:\n{user}"
-        cmd = ["ollama", "run", self.model]
-        out = subprocess.run(
-            cmd,
-            input=prompt,
-            text=True,
-            stdout=subprocess.PIPE,
-            stderr=subprocess.PIPE
-        )
-        if out.returncode != 0:
-            raise RuntimeError(f"ollama CLI error: {out.stderr.strip()}")
-        return out.stdout
+        resp = self._client.generate(model=self.model, prompt=prompt)
+        return resp.get("response", "")
 
 class CmdProvider(LLMProvider):
     """
@@ -52,8 +50,8 @@ class CmdProvider(LLMProvider):
     Erfordert Umgebungsvariable LLM_CMD, z.B.:
       export LLM_CMD='llamafile --model my.gguf --prompt "{SYSTEM}\n\n{USER}"'
     """
-    def __init__(self):
-        self.cmd_template = os.getenv("LLM_CMD", "").strip()
+    def __init__(self, cmd_template: Optional[str] = None):
+        self.cmd_template = (cmd_template or os.getenv("LLM_CMD", "")).strip()
         if not self.cmd_template:
             raise RuntimeError("LLM_CMD nicht gesetzt. Beispiel: export LLM_CMD='llamafile ... \"{SYSTEM}\\n\\n{USER}\"'")
 
@@ -69,12 +67,15 @@ def escape_for_shell(s: str) -> str:
     s = s.replace("\r\n", "\n").replace("\r", "\n")
     return s
 
-def get_provider():
-    provider = os.getenv("LLM_PROVIDER", "ollama").lower()
-    if provider == "ollama":
-        return OllamaProvider()
-    if provider == "cmd":
-        return CmdProvider()
+def get_provider(provider_name: Optional[str] = None,
+                 model: Optional[str] = None,
+                 ollama_url: Optional[str] = None,
+                 llm_cmd: Optional[str] = None):
+    name = (provider_name or os.getenv("LLM_PROVIDER", "ollama")).lower()
+    if name == "ollama":
+        return OllamaProvider(model=model, host=ollama_url)
+    if name == "cmd":
+        return CmdProvider(cmd_template=llm_cmd)
     return None
 
 # ----------------------------------------------------------------------
@@ -309,8 +310,8 @@ def check_llm_answer(md: str, expected_top3: list) -> dict:
 # ----------------------------------------------------------------------
 # LLM-Smoketest + integrierte Checks
 # ----------------------------------------------------------------------
-def run_llm_smoketest_with_checks(company_ids, probes_by_id):
-    provider = get_provider()
+def run_llm_smoketest_with_checks(company_ids, probes_by_id, provider_args):
+    provider = get_provider(**provider_args)
     if not provider:
         msg = "LLM_PROVIDER nicht (korrekt) gesetzt. Smoketest übersprungen. (Nutze 'ollama' oder 'cmd')"
         print(f"{Fore.YELLOW}{msg}{Style.RESET_ALL}")
@@ -353,7 +354,7 @@ def run_llm_smoketest_with_checks(company_ids, probes_by_id):
 # ----------------------------------------------------------------------
 # Client-Chat (freier Prompt im Firmenkontext)
 # ----------------------------------------------------------------------
-def run_client_chat(company_id: str, user_question: str):
+def run_client_chat(company_id: str, user_question: str, provider_args):
     # Args Validation
     if not company_id or not isinstance(company_id, str):
         raise ValueError("Ungültige Company-ID.")
@@ -363,7 +364,7 @@ def run_client_chat(company_id: str, user_question: str):
     if len(user_question) > 4000:
         raise ValueError("Die freie Frage ist zu lang (>4000 Zeichen). Bitte kürzen.")
 
-    provider = get_provider()
+    provider = get_provider(**provider_args)
     if not provider:
         raise RuntimeError("LLM_PROVIDER nicht (korrekt) gesetzt. Setze z. B. LLM_PROVIDER=ollama.")
 
@@ -396,8 +397,20 @@ def main():
     # Neuer Modus:
     ap.add_argument("--client-chat", type=str, default="", metavar="COMPANY_ID", help="Freier Prompt im Kontext einer Firma")
     ap.add_argument("--ask", type=str, default="", help="Freie Frage für --client-chat (in Anführungszeichen)")
+    # Provider/Model-Parameter
+    ap.add_argument("--provider", type=str, default=os.getenv("LLM_PROVIDER", "ollama"),
+                    choices=["ollama", "cmd"], help="LLM Provider (default: ollama)")
+    ap.add_argument("--model", type=str, default=None, help="LLM-Modelle, z. B. 'mistral:7b', 'llama3.2:1b'")
+    ap.add_argument("--ollama-url", type=str, default=None, help="Ollama API URL, z. B. http://ollama:11434")
+    ap.add_argument("--llm-cmd", type=str, default=None, help="Kommando-Template für --provider cmd")
 
     args = ap.parse_args()
+    provider_args = {
+        "provider_name": args.provider,
+        "model": args.model,
+        "ollama_url": args.ollama_url,
+        "llm_cmd": args.llm_cmd,
+    }
 
     # Validierungslogik für Modi-Kombinationen
     client_chat_mode = bool(args.client_chat)
@@ -413,7 +426,7 @@ def main():
 
     if client_chat_mode:
         try:
-            cc = run_client_chat(args.client_chat, args.ask)
+            cc = run_client_chat(args.client_chat, args.ask, provider_args)
             log_payload["client_chat"] = cc
         except Exception as e:
             print(f"{Fore.RED}CLIENT-CHAT ERROR: {e}{Style.RESET_ALL}")
@@ -431,7 +444,7 @@ def main():
             run_baseline(args.ids, probes, strict=args.strict)
 
         if args.with_llm:
-            llm_log = run_llm_smoketest_with_checks(args.ids, probes_by_id)
+            llm_log = run_llm_smoketest_with_checks(args.ids, probes_by_id, provider_args)
             log_payload["llm_runs"] = llm_log
 
     if args.save and (args.as_json or args.with_llm or client_chat_mode):
