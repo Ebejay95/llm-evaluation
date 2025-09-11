@@ -1,0 +1,332 @@
+[
+  {
+    "tail_number": "D-AS001",
+    "aircraft_type": "A320neo",
+    "delivery_year": 2016,
+    "seat_config": {
+      "economy": 125,
+      "premium_economy": 27,
+      "business": 27
+    },
+    "maintenance_base": "LOC-USA-NYC"
+  },
+  {
+    "tail_number": "D-AE002",
+    "aircraft_type": "A320neo",
+    "delivery_year": 2019,
+    "seat_config": {
+      "economy": 125,
+      "premium_economy": 27,
+      "business": 27
+    },
+    "maintenance_base": "LOC-DE-HAM"
+  },
+  {
+    "tail_number": "D-AS003",
+    "aircraft_type": "A320neo",
+    "delivery_year": 2024,
+    "seat_config": {
+      "economy": 125,
+      "premium_economy": 27,
+      "business": 27
+    },
+    "maintenance_base": "LOC-DE-FRA"
+  },
+  {
+    "tail_number": "D-AH004",
+    "aircraft_type": "A320neo",
+    "delivery_year": 2022,
+    "seat_config": {
+      "economy": 125,
+      "premium_economy": 27,
+      "business": 27
+    },
+    "maintenance_base": "LOC-DE-FRA"
+  },
+  {
+    "tail_number": "D-AS005",
+    "aircraft_type": "A320neo",
+    "delivery_year": 2017,
+    "seat_config": {
+      "economy": 125,
+      "premium_economy": 27,
+      "business": 27
+    },
+    "maintenance_base": "LOC-DE-HAM"
+  },
+  {
+    "tail_number": "D-AE006",
+    "aircraft_type": "A320neo",
+    "delivery_year": 2024,
+    "seat_config": {
+      "economy": 125,
+      "premium_economy": 27,
+      "business": 27
+    },
+    "maintenance_base": "LOC-UAE-DXB"
+  },
+  {
+    "tail_number": "D-AS007",
+    "aircraft_type": "A320neo",
+    "delivery_year": 2024,
+    "seat_config": {
+      "economy": 125,
+      "premium_economy": 27,
+      "business": 27
+    },
+    "maintenance_base": "LOC-DE-HAM"
+  },
+  {
+    "tail_number": "D-AH008",
+    "aircraft_type": "A320neo",
+    "delivery_year": 2022,
+    "seat_config": {
+      "economy": 125,
+      "premium_economy": 27,
+      "business": 27
+    },
+    "maintenance_base": "LOC-DE-HAM"
+  },
+  {
+    "tail_number": "D-AG009",
+    "aircraft_type": "A321neo",
+    "delivery_year": 2020,
+    "seat_config": {
+      "economy": 154,
+      "premium_economy": 33,
+      "business": 33
+    },
+    "maintenance_base": "LOC-DE-FRA"
+  },
+  {
+    "tail_number": "D-AE010",
+    "aircraft_type": "A321neo",
+    "delivery_year": 2022,
+    "seat_config": {
+      "economy": 154,
+      "premium_economy": 33,
+      "business": 33
+    },
+    "maintenance_base": "LOC-USA-NYC"
+  },
+  {
+    "tail_number": "D-AF011",
+    "aircraft_type": "A321neo",
+    "delivery_year": 2018,
+    "seat_config": {
+      "economy": 154,
+      "premium_economy": 33,
+      "business": 33
+    },
+    "maintenance_base": "LOC-DE-HAM"
+  },
+  {
+    "tail_number": "D-AF012",
+    "aircraft_type": "A321neo",
+    "delivery_year": 2017,
+    "seat_config": {
+      "economy": 154,
+      "premium_economy": 33,
+      "business": 33
+    },
+    "maintenance_base": "LOC-DE-FRA"
+  },
+  {
+    "tail_number": "D-AG013",
+    "aircraft_type": "A321neo",
+    "delivery_year": 2017,
+    "seat_config": {
+      "economy": 154,
+      "premium_economy": 33,
+      "business": 33
+    },
+    "maintenance_base": "LOC-USA-NYC"
+  },
+  {
+    "tail_number": "D-AF014",
+    "aircraft_type": "A321neo",
+    "delivery_year": 2020,
+    "seat_config": {
+      "economy": 154,
+      "premium_economy": 33,
+      "business": 33
+    },
+    "maintenance_base": "LOC-DE-FRA"
+  },
+  {
+    "tail_number": "D-AG015",
+    "aircraft_type": "A321neo",
+    "delivery_year": 2024,
+    "seat_config": {
+      "economy": 154,
+      "premium_economy": 33,
+      "business": 33
+    },
+    "maintenance_base": "LOC-DE-FRA"
+  },
+  {
+    "tail_number": "D-AG016",
+    "aircraft_type": "A321neo",
+    "delivery_year": 2017,
+    "seat_config": {
+      "economy": 154,
+      "premium_economy": 33,
+      "business": 33
+    },
+    "maintenance_base": "LOC-UAE-DXB"
+  },
+  {
+    "tail_number": "D-AF017",
+    "aircraft_type": "A350-900",
+    "delivery_year": 2021,
+    "seat_config": {
+      "economy": 224,
+      "premium_economy": 48,
+      "business": 48
+    },
+    "maintenance_base": "LOC-UAE-DXB"
+  },
+  {
+    "tail_number": "D-AE018",
+    "aircraft_type": "A350-900",
+    "delivery_year": 2017,
+    "seat_config": {
+      "economy": 224,
+      "premium_economy": 48,
+      "business": 48
+    },
+    "maintenance_base": "LOC-DE-FRA"
+  },
+  {
+    "tail_number": "D-AE019",
+    "aircraft_type": "A350-900",
+    "delivery_year": 2020,
+    "seat_config": {
+      "economy": 224,
+      "premium_economy": 48,
+      "business": 48
+    },
+    "maintenance_base": "LOC-DE-FRA"
+  },
+  {
+    "tail_number": "D-AE020",
+    "aircraft_type": "A350-900",
+    "delivery_year": 2017,
+    "seat_config": {
+      "economy": 224,
+      "premium_economy": 48,
+      "business": 48
+    },
+    "maintenance_base": "LOC-SGP-SIN"
+  },
+  {
+    "tail_number": "D-AF021",
+    "aircraft_type": "A350-900",
+    "delivery_year": 2023,
+    "seat_config": {
+      "economy": 224,
+      "premium_economy": 48,
+      "business": 48
+    },
+    "maintenance_base": "LOC-USA-NYC"
+  },
+  {
+    "tail_number": "D-AE022",
+    "aircraft_type": "A350-900",
+    "delivery_year": 2021,
+    "seat_config": {
+      "economy": 224,
+      "premium_economy": 48,
+      "business": 48
+    },
+    "maintenance_base": "LOC-USA-NYC"
+  },
+  {
+    "tail_number": "D-AE023",
+    "aircraft_type": "B787-9",
+    "delivery_year": 2020,
+    "seat_config": {
+      "economy": 210,
+      "premium_economy": 45,
+      "business": 45
+    },
+    "maintenance_base": "LOC-DE-FRA"
+  },
+  {
+    "tail_number": "D-AH024",
+    "aircraft_type": "B787-9",
+    "delivery_year": 2018,
+    "seat_config": {
+      "economy": 210,
+      "premium_economy": 45,
+      "business": 45
+    },
+    "maintenance_base": "LOC-UAE-DXB"
+  },
+  {
+    "tail_number": "D-AE025",
+    "aircraft_type": "B787-9",
+    "delivery_year": 2018,
+    "seat_config": {
+      "economy": 210,
+      "premium_economy": 45,
+      "business": 45
+    },
+    "maintenance_base": "LOC-SGP-SIN"
+  },
+  {
+    "tail_number": "D-AG026",
+    "aircraft_type": "B787-9",
+    "delivery_year": 2020,
+    "seat_config": {
+      "economy": 210,
+      "premium_economy": 45,
+      "business": 45
+    },
+    "maintenance_base": "LOC-UAE-DXB"
+  },
+  {
+    "tail_number": "D-AE027",
+    "aircraft_type": "B787-9",
+    "delivery_year": 2021,
+    "seat_config": {
+      "economy": 210,
+      "premium_economy": 45,
+      "business": 45
+    },
+    "maintenance_base": "LOC-DE-FRA"
+  },
+  {
+    "tail_number": "D-AE028",
+    "aircraft_type": "B787-9",
+    "delivery_year": 2016,
+    "seat_config": {
+      "economy": 210,
+      "premium_economy": 45,
+      "business": 45
+    },
+    "maintenance_base": "LOC-USA-NYC"
+  },
+  {
+    "tail_number": "D-AG029",
+    "aircraft_type": "B787-9",
+    "delivery_year": 2020,
+    "seat_config": {
+      "economy": 210,
+      "premium_economy": 45,
+      "business": 45
+    },
+    "maintenance_base": "LOC-DE-FRA"
+  },
+  {
+    "tail_number": "D-AE030",
+    "aircraft_type": "B787-9",
+    "delivery_year": 2021,
+    "seat_config": {
+      "economy": 210,
+      "premium_economy": 45,
+      "business": 45
+    },
+    "maintenance_base": "LOC-DE-HAM"
+  }
+]

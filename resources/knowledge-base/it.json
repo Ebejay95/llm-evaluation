@@ -1,0 +1,123 @@
+{
+  "tech_stack": [
+    "AWS",
+    "Kubernetes",
+    "Terraform",
+    "PostgreSQL",
+    "MongoDB",
+    "Python",
+    "Java",
+    "Node.js",
+    "React",
+    "Swift",
+    "Kotlin",
+    "Airflow",
+    "Spark",
+    "dbt"
+  ],
+  "enterprise_apps": [
+    "SAP S/4HANA",
+    "Workday",
+    "Salesforce",
+    "M365/Outlook",
+    "Confluence",
+    "Jira",
+    "Slack",
+    "Zendesk",
+    "Okta"
+  ],
+  "security": {
+    "idp": "Okta",
+    "mfa_policy": "Required for Admins and Remote Access",
+    "password_policy": {
+      "min_length": 12,
+      "complexity": "upper, lower, number, special",
+      "rotation_days": 180
+    }
+  },
+  "groups": {
+    "admin": [
+      "cloud-admins",
+      "secops",
+      "netops"
+    ],
+    "business": [
+      "finance",
+      "hr",
+      "sales",
+      "marketing",
+      "operations",
+      "maintenance",
+      "cabin-crew"
+    ],
+    "engineering": [
+      "platform",
+      "data",
+      "frontend",
+      "backend",
+      "qa",
+      "mobile"
+    ]
+  },
+  "sample_credentials": [
+    {
+      "system": "postgres_admin",
+      "username": "pg_admin",
+      "password": "P@ssw0rd!23"
+    },
+    {
+      "system": "vpn_maintenance",
+      "username": "mro_ops",
+      "password": "FlyHigh!2025"
+    },
+    {
+      "system": "sap_finance",
+      "username": "sap_fin",
+      "password": "Aero$ecure42"
+    }
+  ],
+  "network": {
+    "vpc_cidrs": [
+      "10.0.0.0/16",
+      "10.1.0.0/16"
+    ],
+    "vpn": {
+      "protocol": "OpenVPN",
+      "ports": [
+        1194,
+        443
+      ]
+    },
+    "firewall": {
+      "allowed_ips": [
+        "192.168.1.0/24",
+        "10.0.0.0/8"
+      ],
+      "blocked_ports": [
+        21,
+        23
+      ]
+    }
+  },
+  "configurations": {
+    "kubernetes": {
+      "clusters": [
+        "prod-eu",
+        "prod-us",
+        "staging-eu"
+      ],
+      "pod_security_policy": "restricted"
+    },
+    "logging": {
+      "siem": "Splunk",
+      "retention_days": 365
+    },
+    "backup": {
+      "strategy": "daily-incremental-weekly-full",
+      "locations": [
+        "eu-central-1",
+        "eu-west-1"
+      ]
+    }
+  }
+}

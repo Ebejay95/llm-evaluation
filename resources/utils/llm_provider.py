@@ -16,3 +16,7 @@ class OllamaProvider(LLMProvider):
         prompt = f"System:\n{system}\n\nUser:\n{user}"
         resp = self._client.generate(model=self.model, prompt=prompt)
         return resp.get("response", "")
+
+    # Neu: praktischer Klon für Threadpools
+    def spawn(self) -> "OllamaProvider":
+        return OllamaProvider(model=self.model, host=self.host)

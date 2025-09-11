@@ -1,0 +1,82 @@
+[
+  {
+    "id": "LOC-DE-FRA",
+    "type": "Headquarters",
+    "name": "Frankfurt HQ",
+    "city": "Frankfurt am Main",
+    "country": "Germany",
+    "employees_capacity": 3500
+  },
+  {
+    "id": "LOC-DE-HAM",
+    "type": "Maintenance Facility",
+    "name": "Hamburg MRO Center",
+    "city": "Hamburg",
+    "country": "Germany",
+    "employees_capacity": 1000
+  },
+  {
+    "id": "LOC-USA-NYC",
+    "type": "Regional Office",
+    "name": "North America Office",
+    "city": "New York",
+    "country": "USA",
+    "employees_capacity": 600
+  },
+  {
+    "id": "LOC-SGP-SIN",
+    "type": "Regional Office",
+    "name": "APAC Office",
+    "city": "Singapore",
+    "country": "Singapore",
+    "employees_capacity": 700
+  },
+  {
+    "id": "LOC-UAE-DXB",
+    "type": "Operations Hub",
+    "name": "Gulf Operations Hub",
+    "city": "Dubai",
+    "country": "UAE",
+    "employees_capacity": 400
+  },
+  {
+    "id": "LOC-UK-LHR",
+    "type": "Crew Base",
+    "name": "London Crew Base",
+    "city": "London",
+    "country": "United Kingdom",
+    "employees_capacity": 500
+  },
+  {
+    "id": "LOC-ESP-MAD",
+    "type": "Crew Base",
+    "name": "Madrid Crew Base",
+    "city": "Madrid",
+    "country": "Spain",
+    "employees_capacity": 400
+  },
+  {
+    "id": "LOC-USA-MIA",
+    "type": "Crew Base",
+    "name": "Miami Crew Base",
+    "city": "Miami",
+    "country": "USA",
+    "employees_capacity": 350
+  },
+  {
+    "id": "LOC-JPN-NRT",
+    "type": "Crew Base",
+    "name": "Tokyo-Narita Crew Base",
+    "city": "Narita",
+    "country": "Japan",
+    "employees_capacity": 300
+  },
+  {
+    "id": "LOC-BRA-GRU",
+    "type": "Crew Base",
+    "name": "São Paulo Crew Base",
+    "city": "Guarulhos",
+    "country": "Brazil",
+    "employees_capacity": 300
+  }
+]

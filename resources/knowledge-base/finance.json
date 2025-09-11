@@ -1,0 +1,72 @@
+{
+  "currency": "EUR",
+  "fiscal_year": 2024,
+  "annual": {
+    "revenue": 5400000000,
+    "profit": 420000000,
+    "operating_margin_pct": 7.8
+  },
+  "quarterly": [
+    {
+      "quarter": "Q1",
+      "revenue": 1200000000,
+      "profit": 90000000
+    },
+    {
+      "quarter": "Q2",
+      "revenue": 1350000000,
+      "profit": 120000000
+    },
+    {
+      "quarter": "Q3",
+      "revenue": 1450000000,
+      "profit": 150000000
+    },
+    {
+      "quarter": "Q4",
+      "revenue": 1400000000,
+      "profit": 60000000
+    }
+  ],
+  "by_region": [
+    {
+      "region": "Europe",
+      "revenue": 2700000000,
+      "profit": 220000000
+    },
+    {
+      "region": "North America",
+      "revenue": 1200000000,
+      "profit": 90000000
+    },
+    {
+      "region": "APAC",
+      "revenue": 900000000,
+      "profit": 70000000
+    },
+    {
+      "region": "Middle East",
+      "revenue": 400000000,
+      "profit": 30000000
+    },
+    {
+      "region": "Latin America",
+      "revenue": 200000000,
+      "profit": 10000000
+    }
+  ],
+  "top_customers": [
+    {
+      "corporate_account": "TechNova GmbH",
+      "annual_revenue": 42000000
+    },
+    {
+      "corporate_account": "Pacific Logistics Ltd.",
+      "annual_revenue": 31000000
+    },
+    {
+      "corporate_account": "EuroPharma AG",
+      "annual_revenue": 28000000
+    }
+  ]
+}

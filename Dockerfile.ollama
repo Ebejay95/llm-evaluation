@@ -1,8 +1,9 @@
 # Dockerfile.ollama
 FROM ubuntu:22.04
 
-# ---- Basis ----
 ENV DEBIAN_FRONTEND=noninteractive
+
+# ---- Basis ----
 RUN apt-get update && apt-get install -y \
     curl ca-certificates jq \
  && rm -rf /var/lib/apt/lists/*
@@ -10,25 +11,23 @@ RUN apt-get update && apt-get install -y \
 # Ollama installieren
 RUN curl -fsSL https://ollama.ai/install.sh | sh
 
-# Models-Verzeichnis (optional, bleibt Standard)
+# Models-Verzeichnis (optional)
 ENV OLLAMA_MODELS=/root/.ollama
-# WICHTIG: auf allen Interfaces lauschen, sonst nur 127.0.0.1
+# Auf allen Interfaces lauschen
 ENV OLLAMA_HOST=0.0.0.0
 
+# Vorab ein paar kleine Modelle ziehen (Server kurz im Hintergrund starten)
 RUN ollama serve & \
     sleep 10 && \
     ollama pull llama3.2:1b && \
-    # ollama pull phi3:mini && \
-    # ollama pull gemma2:2b && \
     ollama pull qwen2:0.5b && \
-    # ollama pull mistral:7b && \
-    # ollama pull tinyllama:1.1b && \
     pkill ollama
 
 EXPOSE 11434
 
-# Healthcheck hilft compose beim Warten
-HEALTHCHECK --interval=5s --timeout=3s --retries=20 CMD curl -fsS http://localhost:11434/api/version || exit 1
+# Healthcheck für compose
+HEALTHCHECK --interval=5s --timeout=3s --retries=20 \
+  CMD curl -fsS http://localhost:11434/api/version || exit 1
 
-# Final: Server auf 0.0.0.0 binden
+# Final: Server starten
 CMD ["ollama","serve"]
