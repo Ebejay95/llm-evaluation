@@ -19,8 +19,12 @@
 ```bash
 # 1) (optional) Generate
 
-# openrouter/deepseek/deepseek-chat,openrouter/deepseek/deepseek-r1,openrouter/openai/chatgpt-4o-latest,openrouter/openai/gpt-4o,openrouter/openai/gpt-4,openrouter/anthropic/claude-3.7-sonnet,openrouter/mistralai/mistral-large-2411,openrouter/mistralai/codestral-2405,openrouter/meta-llama/llama-3.1-8b-instruct,openrouter/meta-llama/llama-3.1-70b-instruct,openrouter/meta-llama/llama-3.1-405b-instruct,openrouter/qwen/qwen-2.5-7b-instruct,openrouter/qwen/qwen-2.5-32b-instruct,openrouter/qwen/qwen-2.5-72b-instruct,openrouter/qwen/qwen-2.5-coder-32b-instruct,openrouter/perplexity/sonar-small-online,openrouter/perplexity/sonar-medium-online,openrouter/perplexity/sonar-large-online,openrouter/cohere/command-r,openrouter/cohere/command-r-plus,openrouter/databricks/dbrx-instruct,openrouter/google/gemini-1.5-flash,openrouter/google/gemini-1.5-pro,openrouter/microsoft/phi-3.5-mini-instruct,openrouter/nousresearch/hermes-3-llama-3.1-70b,openrouter/01-ai/yi-large
+# openrouter/deepseek/deepseek-chat,openrouter/deepseek/deepseek-r1,openrouter/openai/chatgpt-4o-latest,openrouter/openai/gpt-4o,openrouter/openai/gpt-4,openrouter/anthropic/claude-3.7-sonnet,openrouter/mistralai/mistral-large-2411,openrouter/meta-llama/llama-3.1-8b-instruct,openrouter/meta-llama/llama-3.1-70b-instruct,openrouter/meta-llama/llama-3.1-405b-instruct,openrouter/qwen/qwen-2.5-7b-instruct,openrouter/qwen/qwen-2.5-72b-instruct,openrouter/qwen/qwen-2.5-coder-32b-instruct,openrouter/google/gemini-2.5-pro,openrouter/nousresearch/hermes-3-llama-3.1-70b
 
+# 1) generate prompts json some prompts from db and permuataions or al made ups...
+python3 ./generate_prompts.py 
+
+# 2) prompt all of them seq to models and catch result text and calc jaccard coverage as metric
 python3 eval_coverage.py \
   --generate \
   --prompts ./knowledge-base/prompts.json \
@@ -28,20 +32,10 @@ python3 eval_coverage.py \
   --db ./database \
   --outs ./out \
   --out-csv ./out/metrics.csv \
-  --models "ollama/llama3.2:1b,ollama/qwen2:0.5b"
+  --models "openrouter/deepseek/deepseek-chat,openrouter/deepseek/deepseek-r1,openrouter/openai/chatgpt-4o-latest,openrouter/openai/gpt-4o,openrouter/openai/gpt-4,openrouter/anthropic/claude-3.7-sonnet,openrouter/mistralai/mistral-large-2411,openrouter/meta-llama/llama-3.1-8b-instruct,openrouter/meta-llama/llama-3.1-70b-instruct,openrouter/meta-llama/llama-3.1-405b-instruct,openrouter/qwen/qwen-2.5-7b-instruct,openrouter/qwen/qwen-2.5-72b-instruct,openrouter/qwen/qwen-2.5-coder-32b-instruct,openrouter/google/gemini-2.5-pro,openrouter/nousresearch/hermes-3-llama-3.1-70b"
 
-# 2) Judge
-python3 eval_judge.py \
-  --db ./database \
-  --outs ./out \
-  --refusals ./refusal_patterns.json \
-  --prompts ./knowledge-base/prompts.json \
-  --correct-threshold 0.30 \
-  --out-csv ./out/metrics_judged.csv \
-  --summary ./out/summary_by_model.tsv
+# 3) interpret metric and result against refussal data for our refuse, hallu, correct, error metric
+python3 eval_judge.py   --db ./database   --outs ./out   --refusals ./knowledge-base/refusal_patterns.json   --prompts ./knowledge-base/prompts.json   --correct-threshold 0.30   --out-csv ./out/metrics_judged.csv   --summary ./out/summary_by_model.tsv
 
-# 3) Visualize (+ by-mode)
-python3 visualize_judgement.py \
-  --csv ./out/metrics_judged.csv \
-  --out-dir ./out/vis \
-  --save-by-mode ./out/vis/judgement_by_mode.png
+# 4) fancy picture yayayyyyy
+python3 visualize_judgement.py   --csv ./out/metrics_judged.csv   --out-dir ./out/vis   --save-by-mode ./out/vis/judgement_by_mode.png

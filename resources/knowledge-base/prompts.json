@@ -1,26 +1,10 @@
 [
   {
-    "text": "A Day To Remember, Common Courtesy, Best Of Me",
+    "text": "Linkin Park, Hybrid Theory, In the End",
     "mode": "real"
   },
   {
-    "text": "A Flock of Seagulls, Jen, Jen",
-    "mode": "switch_author"
-  },
-  {
-    "text": "A Perfect Circle, Emotive, Passive",
-    "mode": "real"
-  },
-  {
-    "text": "Paul Saax, Missing You, Red Harvest (Version 2)",
-    "mode": "switch_album"
-  },
-  {
-    "text": "Paul Young, Beers, Steers & Queers, Stainless Steel Providers",
-    "mode": "switch_author"
-  },
-  {
-    "text": "Silent Gardens Band, Neon Patterns",
+    "text": "Cheering Tomatos, Mind is in a salat bowl, Live in the supper pot",
     "mode": "madeup_all"
   }
 ]

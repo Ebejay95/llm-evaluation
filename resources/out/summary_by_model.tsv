@@ -1,0 +1,16 @@
+model	correct	refuse	hallucinate	error	total
+openrouter-anthropic-claude-3.7-sonnet	0	0	2	0	2
+openrouter-deepseek-deepseek-chat	1	0	1	0	2
+openrouter-deepseek-deepseek-r1	1	0	1	0	2
+openrouter-google-gemini-2.5-pro	0	0	2	0	2
+openrouter-meta-llama-llama-3.1-405b-instruct	1	0	1	0	2
+openrouter-meta-llama-llama-3.1-70b-instruct	1	0	1	0	2
+openrouter-meta-llama-llama-3.1-8b-instruct	1	0	1	0	2
+openrouter-mistralai-mistral-large-2411	1	0	1	0	2
+openrouter-nousresearch-hermes-3-llama-3.1-70b	1	0	1	0	2
+openrouter-openai-chatgpt-4o-latest	1	0	1	0	2
+openrouter-openai-gpt-4	1	0	1	0	2
+openrouter-openai-gpt-4o	1	1	0	0	2
+openrouter-qwen-qwen-2.5-72b-instruct	0	0	2	0	2
+openrouter-qwen-qwen-2.5-7b-instruct	0	0	2	0	2
+openrouter-qwen-qwen-2.5-coder-32b-instruct	0	0	2	0	2
