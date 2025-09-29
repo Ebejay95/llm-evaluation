@@ -4,14 +4,15 @@
 Visualize judged results (metrics_judged.csv).
 
 1) Stacked bars per model (correct/refuse/hallucinate/error)
-2) Per-model song list as a colored graphic (one PNG per model):
-   each song shown as a horizontal bar colored by its label.
+2) Per-model song list als farbige Grafik (PNG je Modell)
+3) NEU: Stacked bars per mode (optional)
 
 Usage:
   python3 resources/visualize_judgement.py \
     --csv ./resources/out/metrics_judged.csv \
     --out-dir ./resources/out/vis \
-    --save-stacked ./resources/out/vis/judgement_stacked.png
+    --save-stacked ./resources/out/vis/judgement_stacked.png \
+    --save-by-mode ./resources/out/vis/judgement_by_mode.png
 """
 from __future__ import annotations
 import argparse
@@ -65,6 +66,37 @@ def stacked_bar_by_model(rows, save_path: str | None = None):
         Path(save_path).parent.mkdir(parents=True, exist_ok=True)
         plt.savefig(save_path, dpi=150)
         print(f"[ok] saved stacked bar: {save_path}")
+        plt.close()
+    else:
+        plt.show()
+
+def stacked_bar_by_mode(rows, save_path: str | None = None):
+    by_mode = defaultdict(Counter)
+    for r in rows:
+        md = r.get("mode","?")
+        lab = r.get("label","error")
+        by_mode[md][lab] += 1
+
+    modes = sorted(by_mode.keys())
+    base = [0]*len(modes)
+
+    plt.figure(figsize=(max(6, 0.9*len(modes)), 5))
+    for lab in LABELS:
+        vals = [by_mode[m].get(lab, 0) for m in modes]
+        plt.bar(modes, vals, bottom=base, label=lab, color=COLORS[lab])
+        base = [base[i] + vals[i] for i in range(len(vals))]
+
+    plt.title("Judgement per mode")
+    plt.xlabel("Mode")
+    plt.ylabel("Count")
+    plt.xticks(rotation=20, ha="right")
+    plt.legend()
+    plt.tight_layout()
+
+    if save_path:
+        Path(save_path).parent.mkdir(parents=True, exist_ok=True)
+        plt.savefig(save_path, dpi=150)
+        print(f"[ok] saved by-mode stacked bar: {save_path}")
         plt.close()
     else:
         plt.show()
@@ -157,6 +189,10 @@ def main():
                     help="Path to metrics_judged.csv")
     ap.add_argument("--out-dir", default="./resources/out/vis",
                     help="Directory to write visualizations")
+    ap.add_argument("--save-stacked", default="",
+                    help="Optional path to PNG (stacked bars per model)")
+    ap.add_argument("--save-by-mode", default="",
+                    help="Optional path to PNG (stacked bars per mode)")
     args = ap.parse_args()
 
     rows = read_rows(args.csv)
@@ -165,10 +201,15 @@ def main():
         return
 
     # 1) Stacked bars per model -> IMMER speichern
-    stacked_out = str(Path(args.out_dir) / "judgement_stacked.png")
+    stacked_out = str(Path(args.out_dir) / "judgement_stacked.png") if not args.save_stacked else args.save_stacked
+    Path(stacked_out).parent.mkdir(parents=True, exist_ok=True)
     stacked_bar_by_model(rows, save_path=stacked_out)
 
-    # 2) Per-model song lists -> IMMER erzeugen
+    # 2) Per-mode (optional or default target)
+    if args.save_by_mode:
+        stacked_bar_by_mode(rows, save_path=args.save_by_mode)
+
+    # 3) Per-model song lists -> IMMER erzeugen
     per_model_song_lists(rows, args.out_dir)
 
 if __name__ == "__main__":

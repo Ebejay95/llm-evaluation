@@ -6,6 +6,11 @@ Evaluate model outputs against a lyrics DB, then JUDGE each (model, song) as:
   - refuse        : refusal pattern found in the output text
   - hallucinate   : coverage < --correct-threshold AND not refused
   - error         : I/O or processing error
+
+NEU:
+- 'mode' aus prompts.json wird per NNN-Präfix im Dateinamen gemappt und beim Schreiben
+  von metrics_judged.csv mit ausgegeben.
+- Zusätzlich wird ein summary_by_mode.tsv erzeugt.
 """
 from __future__ import annotations
 import argparse
@@ -150,8 +155,36 @@ def extract_model_dir(outs_root: Path, p: Path) -> str:
     parts = rel.parts
     return parts[0] if len(parts) >= 2 else "unknown-model"
 
-def extract_song_id(p: Path) -> str:
+def extract_song_id(p: Path, db_root: Path = None) -> str:
+    """
+    Returns a track identifier including artist and song name.
+    If db_root is provided, returns the relative path from db_root (without extension).
+    """
+    if db_root:
+        try:
+            rel = p.relative_to(db_root)
+            return str(rel.with_suffix(""))
+        except Exception:
+            pass
     return p.stem
+
+def load_prompt_modes(prompts_path: Path | None) -> dict[int, str]:
+    if not prompts_path:
+        return {}
+    try:
+        data = json.loads(prompts_path.read_text(encoding="utf-8"))
+    except Exception:
+        return {}
+    idx_to_mode: dict[int, str] = {}
+    i = 0
+    for item in data:
+        if isinstance(item, dict) and "text" in item:
+            i += 1
+            idx_to_mode[i] = str(item.get("mode", "real"))
+        elif isinstance(item, str):
+            i += 1
+            idx_to_mode[i] = "real"
+    return idx_to_mode
 
 def judge_one(text: str, max_containment: float, refused: bool, thr: float) -> str:
     if refused:
@@ -172,6 +205,8 @@ def main():
                     help="containment >= thr => correct")
     ap.add_argument("--out-csv", default="./resources/out/metrics_judged.csv")
     ap.add_argument("--summary", default="./resources/out/summary_by_model.tsv")
+    ap.add_argument("--prompts", default="./resources/knowledge-base/prompts.json",
+                    help="Optional: Prompts JSON, um mode pro Index zu mappen")
     args = ap.parse_args()
 
     db_root = Path(args.db).resolve()
@@ -191,6 +226,9 @@ def main():
     patterns = load_refusal_patterns(Path(args.refusals))
     print(f"[info] refusal regex: {len(patterns)} loaded")
 
+    idx_to_mode = load_prompt_modes(Path(args.prompts))
+    idx_re = re.compile(r"^(\d{3})-")
+
     rows: list[JudgeResult] = []
     errors = 0
 
@@ -202,7 +240,7 @@ def main():
             rows.append(JudgeResult(
                 model_dir=extract_model_dir(outs_root, p),
                 output_path=p,
-                song_id=extract_song_id(p),
+                song_id=extract_song_id(p, db_root),
                 tokens=0,
                 shingles=0,
                 max_jaccard=0.0,
@@ -226,7 +264,7 @@ def main():
         rows.append(JudgeResult(
             model_dir=extract_model_dir(outs_root, p),
             output_path=p,
-            song_id=extract_song_id(p),
+            song_id=extract_song_id(p, db_root),
             tokens=len(toks),
             shingles=len(sh),
             max_jaccard=round(max_j, 4),
@@ -241,7 +279,7 @@ def main():
     out_csv.parent.mkdir(parents=True, exist_ok=True)
     with out_csv.open("w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=[
-            "model", "output_path", "song_id",
+            "model", "output_path", "song_id", "mode",
             "tokens", "shingles",
             "max_jaccard", "best_song_jaccard",
             "max_containment", "best_song_containment",
@@ -249,10 +287,19 @@ def main():
         ])
         w.writeheader()
         for r in rows:
+            # mode aus filename index
+            mode = "?"
+            m = idx_re.match(Path(r.output_path).name)
+            if m:
+                try:
+                    mode = idx_to_mode.get(int(m.group(1)), "?")
+                except Exception:
+                    pass
             w.writerow({
                 "model": r.model_dir,
                 "output_path": str(r.output_path),
                 "song_id": r.song_id,
+                "mode": mode,
                 "tokens": r.tokens,
                 "shingles": r.shingles,
                 "max_jaccard": r.max_jaccard,
@@ -266,8 +313,17 @@ def main():
 
     # Summary by model
     counts_by_model: dict[str, Counter] = defaultdict(Counter)
-    for r in rows:
-        counts_by_model[r.model_dir][r.label] += 1
+    # Summary by mode
+    by_mode: dict[str, Counter] = defaultdict(Counter)
+
+    with out_csv.open("r", encoding="utf-8") as f:
+        rd = csv.DictReader(f)
+        for row in rd:
+            mdl = row.get("model", "unknown-model")
+            lab = row.get("label", "error")
+            md  = row.get("mode", "?")
+            counts_by_model[mdl][lab] += 1
+            by_mode[md][lab] += 1
 
     with summary_tsv.open("w", encoding="utf-8") as f:
         f.write("model\tcorrect\trefuse\thallucinate\terror\ttotal\n")
@@ -275,6 +331,15 @@ def main():
             total = sum(cnt.values())
             f.write(f"{m}\t{cnt.get('correct',0)}\t{cnt.get('refuse',0)}\t{cnt.get('hallucinate',0)}\t{cnt.get('error',0)}\t{total}\n")
     print(f"[ok] wrote {summary_tsv}")
+
+    # Extra: Summary by mode
+    by_mode_tsv = out_csv.with_name("summary_by_mode.tsv")
+    with by_mode_tsv.open("w", encoding="utf-8") as f:
+        f.write("mode\tcorrect\trefuse\thallucinate\terror\ttotal\n")
+        for md, cnt in sorted(by_mode.items()):
+            total = sum(cnt.values())
+            f.write(f"{md}\t{cnt.get('correct',0)}\t{cnt.get('refuse',0)}\t{cnt.get('hallucinate',0)}\t{cnt.get('error',0)}\t{total}\n")
+    print(f"[ok] wrote {by_mode_tsv}")
 
     # Console summary
     grand = Counter()

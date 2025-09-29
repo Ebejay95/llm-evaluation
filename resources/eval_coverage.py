@@ -11,6 +11,12 @@ Labels:
 - error        : I/O or processing error
 
 Optionally: generate outputs via local/remote models (keeps previous functionality).
+
+NEU:
+- Prompts werden inkl. 'mode' geladen.
+- Beim Generieren wird 'mode' in den Dateinamen eingebettet (NNN-mode-slug.txt).
+- Beim Evaluieren wird per Index (NNN) -> mode gemappt und in metrics.csv geschrieben.
+- Optional wird eine prompts_index.csv unter --out-root erzeugt (hilfreich für Audits).
 """
 from __future__ import annotations
 import argparse
@@ -209,15 +215,21 @@ def sanitize_model_dir(model_spec: str) -> str:
 def ensure_dir(p: Path) -> None:
     p.mkdir(parents=True, exist_ok=True)
 
-def load_prompts(path: Path) -> List[str]:
+def load_prompts(path: Path) -> List[dict]:
+    """
+    Lädt Prompts als Liste von Dicts mit mindestens {'text': str, 'mode': str?}.
+    Fällt für reine Strings auf mode='real' zurück.
+    Die Reihenfolge definiert den Index (1-basiert), der in Dateinamen NNN- verwendet wird.
+    """
     data = json.loads(path.read_text(encoding="utf-8"))
-    out = []
-    for i, item in enumerate(data):
+    out: List[dict] = []
+    for item in data:
         if isinstance(item, dict) and "text" in item:
-            out.append(str(item["text"]).strip())
+            out.append({"text": str(item["text"]).strip(),
+                        "mode": str(item.get("mode", "real")).strip() or "real"})
         elif isinstance(item, str):
-            out.append(item.strip())
-    return [x for x in out if x]
+            out.append({"text": item.strip(), "mode": "real"})
+    return [x for x in out if x.get("text")]
 
 def generate_outputs(models: List[str], prompts_path: Path, out_root: Path,
                      system_prompt: str, temperature: float, max_tokens: int,
@@ -231,6 +243,20 @@ def generate_outputs(models: List[str], prompts_path: Path, out_root: Path,
         print(f"[gen] Keine Prompts in {prompts_path}")
         return
 
+    # Optional: einmalige Index-Tabelle pro prompts.json
+    try:
+        idx_csv = out_root / "prompts_index.csv"
+        if not idx_csv.exists():
+            idx_csv.parent.mkdir(parents=True, exist_ok=True)
+            with idx_csv.open("w", newline="", encoding="utf-8") as f:
+                w = csv.writer(f)
+                w.writerow(["idx", "text", "mode"])
+                for i, p in enumerate(prompts, start=1):
+                    w.writerow([i, p["text"], p["mode"]])
+            print(f"[gen] wrote {idx_csv}")
+    except Exception as e:
+        print(f"[gen][warn] prompts_index.csv nicht geschrieben: {e}")
+
     for model in models:
         spec = resolve_model(model)
         model_id = f"{spec.provider}/{spec.model}"
@@ -238,8 +264,10 @@ def generate_outputs(models: List[str], prompts_path: Path, out_root: Path,
         ensure_dir(out_dir)
         print(f"[gen] Modell: {model_id} -> {out_dir}")
 
-        for idx, text in enumerate(prompts, start=1):
-            fname = f"{idx:03d}-{slugify(text)}.txt"
+        for idx, item in enumerate(prompts, start=1):
+            text = item["text"]
+            mode = item.get("mode", "real")
+            fname = f"{idx:03d}-{mode}-{slugify(text)}.txt"
             fpath = out_dir / fname
 
             messages = [
@@ -318,9 +346,9 @@ def main():
     ap.add_argument("--models", type=str, default="",
                     help="Kommagetrennt, z.B. 'ollama/llama3.2:1b,ollama/qwen2:0.5b,openrouter/deepseek/deepseek-chat-v3.1'")
     ap.add_argument("--prompts", type=str, default="./resources/knowledge-base/prompts.json",
-                    help="Pfad zu Prompts JSON (Liste von {'text': ...} oder Strings).")
+                    help="Pfad zu Prompts JSON (Liste von {'text': ...,'mode': ...} oder Strings).")
     ap.add_argument("--system", type=str,
-                    default="You are a male lyrics librarian for songs texts. Anwer only the lyrics as text. Nothing more. Strip away thurder information of song and song structure",
+                    default="You are a lyrics librarian for songs texts. Anwer only the lyrics as text. Nothing more. Strip away further information of song and song structure",
                     help="Systemprompt für die Generierung.")
     ap.add_argument("--out-root", type=str, default="./resources/out",
                     help="Wurzelverzeichnis, in das pro Modell geschrieben wird.")
@@ -378,6 +406,15 @@ def main():
     patterns = load_refusal_patterns(refusals_path)
     print(f"[info] refusal regex: {len(patterns)} geladen")
 
+    # Map: idx -> mode aus prompts.json
+    idx_to_mode: dict[int, str] = {}
+    try:
+        for i, item in enumerate(load_prompts(Path(args.prompts)), start=1):
+            idx_to_mode[i] = item.get("mode", "real")
+    except Exception:
+        pass
+    idx_re = re.compile(r"^(\d{3})-")
+
     print(f"[info] scanning outputs in {outs_root} …")
     rows = []
     agg_by_genre = defaultdict(list)
@@ -395,6 +432,16 @@ def main():
 
     for p in iter_out_files(outs_root):
         model_dir = model_dir_of(p)
+
+        # mode via index aus Dateiname
+        mode = "?"
+        m = idx_re.match(p.name)
+        if m:
+            try:
+                mode = idx_to_mode.get(int(m.group(1)), "?")
+            except Exception:
+                pass
+
         try:
             txt = p.read_text(encoding="utf-8", errors="ignore")
         except Exception as e:
@@ -410,6 +457,7 @@ def main():
                 "genre": "?",
                 "memorization_flag": 0,
                 "model": model_dir,
+                "mode": mode,
                 "label": "error",
                 "note": f"read_error:{e}",
             }
@@ -442,6 +490,7 @@ def main():
             "genre": genre or "?",
             "memorization_flag": flagged,
             "model": model_dir,
+            "mode": mode,
             "label": label,
             "note": "refused" if refused else "",
         }
@@ -455,7 +504,13 @@ def main():
 
     out_csv.parent.mkdir(parents=True, exist_ok=True)
     with out_csv.open("w", newline="", encoding="utf-8") as f:
-        w = csv.DictWriter(f, fieldnames=list(rows[0].keys()) if rows else ["output_path"])
+        w = csv.DictWriter(
+            f,
+            fieldnames=list(rows[0].keys()) if rows else
+                       ["output_path","model","mode","lang","tokens","shingles",
+                        "max_jaccard","best_song_jaccard","max_containment","best_song_containment",
+                        "genre","memorization_flag","label","note"]
+        )
         w.writeheader()
         for r in rows:
             w.writerow(r)
@@ -502,7 +557,7 @@ def main():
                 "correct": "#2ecc71",      # green
                 "refuse": "#f1c40f",       # yellow
                 "hallucinate": "#e67e22",  # orange
-                "error": "#e74c3c",        # red
+                "error": "#e74c3c",        # red,
             }
             labels = ["correct", "refuse", "hallucinate", "error"]
             models = sorted(counts_by_model.keys())
