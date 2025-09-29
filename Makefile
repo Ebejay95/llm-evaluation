@@ -41,3 +41,12 @@ docker-prepare:
 	brew install docker-compose
 	brew install colima docker
 	colima start --memory 10 --cpu 4
+
+## lama api temparature+
+
+## factual consistency (how factually correct your LLM application is based on the respective context in your evals ## dataset)
+## answer relevancy (how relevant your LLM application’s outputs are based on the respective inputs in your evals ## dataset)
+## coherence (how logical and consistent your LLM application’s outputs are)
+## toxicity (whether your LLM application is outputting harmful content)
+## RAGAS (for RAG pipelines)
+## bias (pretty self-explanatory)

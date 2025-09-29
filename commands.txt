@@ -1,0 +1,1 @@
+python3 ./main.py --ollama-url http://ollama:11434   --model "llama3.2:1b,qwen2:0.5b,openrouter/deepseek/deepseek-chat-v3.1"   --judge-models "llama3.2:1b,qwen2:0.5b,openrouter/deepseek/deepseek-chat-v3.1"   --guard-models "llama3.2:1b,qwen2:0.5b,openrouter/deepseek/deepseek-chat-v3.1" && python3 ./visualize.py 

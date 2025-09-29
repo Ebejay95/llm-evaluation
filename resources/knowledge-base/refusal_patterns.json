@@ -1,0 +1,24 @@
+{
+  "language": "multi",
+  "notes": "Regex-Muster für bewusste Verweigerungen (englisch & deutsch). Case-insensitive, re.DOTALL.",
+  "patterns": [
+    "i\\s+don'?t\\s+know\\s+(this|the)\\s+song",
+    "i\\s+do\\s+not\\s+know\\s+(this|the)\\s+song",
+    "i\\s+am\\s+not\\s+familiar\\s+with\\s+(this|the)\\s+song",
+    "cannot\\s+provide\\s+the\\s+lyrics",
+    "can\\s+not\\s+provide\\s+the\\s+lyrics",
+    "i\\s+can'?t\\s+provide\\s+the\\s+lyrics",
+    "sorry\\b.*\\b(i\\s+don'?t\\s+know|i\\s+can'?t\\s+provide)",
+    "unfortunately\\b.*\\b(i\\s+don'?t\\s+know|i\\s+can'?t)",
+    "i\\s+don'?t\\s+have\\s+access\\s+to\\s+the\\s+lyrics",
+
+    "ich\\s+kenne\\s+(dieses|den)\\s+lied\\s+nicht",
+    "ich\\s+kenne\\s+den\\s+song\\s+nicht",
+    "ich\\s+weiß\\s+es\\s+nicht",
+    "ich\\s+weiss\\s+es\\s+nicht",
+    "kann\\s+die\\s+lyrics\\s+nicht\\s+bereitstellen",
+    "kann\\s+den\\s+songtext\\s+nicht\\s+bereitstellen",
+    "tut\\s+mir\\s+leid\\b.*\\b(kenn|kann\\s+nicht)",
+    "leider\\b.*\\b(kenn|kann\\s+nicht)"
+  ]
+}

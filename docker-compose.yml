@@ -8,11 +8,32 @@ services:
     restart: unless-stopped
     volumes:
       - ollama:/root/.ollama
+    environment:
+      - OLLAMA_HOST=0.0.0.0
     healthcheck:
       test: ["CMD","curl","-fsS","http://localhost:11434/api/version"]
       interval: 5s
       timeout: 3s
-      retries: 20
+      retries: 30
+    command: |
+      bash -lc '
+        set -euo pipefail
+        ollama serve &
+        # Wait for API to be up
+        until curl -fsS http://localhost:11434/api/version >/dev/null; do sleep 1; done
+        # Ensure required models exist in the mounted volume
+        MODELS="llama3.2:1b qwen2:0.5b mistral:7b"
+        for m in $MODELS; do
+          if ! ollama list | awk "{print \$1}" | grep -qx "$m"; then
+            echo "[bootstrap] Pulling $m …"
+            ollama pull "$m" || true
+          else
+            echo "[bootstrap] Model $m already present."
+          fi
+        done
+        # Keep foreground
+        wait -n
+      '
 
   app:
     build:
@@ -21,11 +42,17 @@ services:
     depends_on:
       ollama:
         condition: service_healthy
+    env_file:
+      - ./resources/.env
     working_dir: /app/resources
     volumes:
       - ./resources:/app/resources:rw
     environment:
       - PYTHONUNBUFFERED=1
+      - OLLAMA_BASE_URL=http://ollama:11434
+      - OLLAMA_GUARD_MODEL=llama3.2:1b
+      - HF_HUB_OFFLINE=1
+      - TRANSFORMERS_OFFLINE=1
     tty: true
     stdin_open: true
     command: ["bash","-lc","sleep infinity"]

@@ -9,6 +9,7 @@ COPY . /app
 
 # Python-Dependencies (richtiger Pfad!)
 RUN pip install --no-cache-dir -r /app/resources/requirements.txt
+RUN pip install deepeval
 
 # Optional: Fallback-ENV
 ENV PYTHONPATH=/app

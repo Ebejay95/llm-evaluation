@@ -21,6 +21,12 @@ RUN ollama serve & \
     sleep 10 && \
     ollama pull llama3.2:1b && \
     ollama pull qwen2:0.5b && \
+    ollama pull mistral:7b && \
+#     ollama pull qwen2:1.5b && \
+#     ollama pull gemma2:2b && \
+#     ollama pull phi3:mini && \
+#     ollama pull deepseek-r1:1. && \
+#     ollama pull neural-chat:7b && \
     pkill ollama
 
 EXPOSE 11434
