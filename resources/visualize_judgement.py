@@ -30,7 +30,54 @@ COLORS = {
     "error": "#e74c3c"         # red
 }
 LABELS = ["correct", "refuse", "hallucinate", "error"]
+def stacked_bar_by_mode_for_model(rows, model, save_path: str | None = None):
+    """
+    Create a stacked bar plot of judgement per mode for a single model.
+    """
+    by_mode = defaultdict(Counter)
+    for r in rows:
+        md = r.get("mode", "?")
+        lab = r.get("new_label", r.get("label", "error"))
+        by_mode[md][lab] += 1
 
+    modes = sorted(by_mode.keys())
+    base = [0]*len(modes)
+
+    plt.figure(figsize=(max(6, 0.9*len(modes)), 5))
+    for lab in LABELS:
+        vals = [by_mode[m].get(lab, 0) for m in modes]
+        plt.bar(modes, vals, bottom=base, label=lab, color=COLORS[lab])
+        base = [base[i] + vals[i] for i in range(len(vals))]
+
+    plt.title(f"Judgement per mode — {model}")
+    plt.xlabel("Mode")
+    plt.ylabel("Count")
+    plt.xticks(rotation=20, ha="right")
+    plt.legend()
+    plt.tight_layout()
+
+    if save_path:
+        Path(save_path).parent.mkdir(parents=True, exist_ok=True)
+        plt.savefig(save_path, dpi=150)
+        print(f"[ok] saved by-mode for model: {save_path}")
+        plt.close()
+    else:
+        plt.show()
+
+def per_model_mode_stacked_bars(rows, out_dir: str):
+    """
+    For each model, create a stacked bar plot of judgement per mode.
+    """
+    out_dir_p = Path(out_dir)
+    by_model_rows = defaultdict(list)
+    for r in rows:
+        m = r.get("model", "unknown")
+        by_model_rows[m].append(r)
+
+    for model, items in sorted(by_model_rows.items()):
+        fname = f"judgement_by_mode_{_sanitize_filename(model)}.png"
+        save_path = out_dir_p / fname
+        stacked_bar_by_mode_for_model(items, model, save_path=str(save_path))
 def read_rows(path):
     rows = []
     with open(path, newline="", encoding="utf-8") as f:
@@ -43,7 +90,7 @@ def stacked_bar_by_model(rows, save_path: str | None = None):
     by_model = defaultdict(Counter)
     for r in rows:
         m = r.get("model", "unknown")
-        label = r.get("label", "error")
+        label = r.get("new_label", r.get("label", "error"))
         by_model[m][label] += 1
 
     models = sorted(by_model.keys())
@@ -74,7 +121,7 @@ def stacked_bar_by_mode(rows, save_path: str | None = None):
     by_mode = defaultdict(Counter)
     for r in rows:
         md = r.get("mode","?")
-        lab = r.get("label","error")
+        lab = r.get("new_label", r.get("label","error"))
         by_mode[md][lab] += 1
 
     modes = sorted(by_mode.keys())
@@ -126,7 +173,7 @@ def draw_model_song_list(model: str, items: list[dict], out_dir: Path):
     order_rank = {lab: i for i, lab in enumerate(LABELS)}
     items_sorted = sorted(
         items,
-        key=lambda r: (order_rank.get(r.get("label","error"), 999), _song_id_from_row(r).lower())
+        key=lambda r: (order_rank.get(r.get("new_label", r.get("label","error")), 999), _song_id_from_row(r).lower())
     )
 
     n = len(items_sorted)
@@ -141,7 +188,7 @@ def draw_model_song_list(model: str, items: list[dict], out_dir: Path):
     for idx, r in enumerate(items_sorted):
         y = y_positions[idx]
         song = _song_id_from_row(r)
-        lab = r.get("label", "error")
+        lab = r.get("new_label", r.get("label", "error"))
         color = COLORS.get(lab, "#999999")
         # Draw filled bar
         ax.barh(y=y, width=1.0, left=0.0, height=0.8, color=color, edgecolor="black", linewidth=0.2)
@@ -211,6 +258,9 @@ def main():
 
     # 3) Per-model song lists -> IMMER erzeugen
     per_model_song_lists(rows, args.out_dir)
+
+    # 4) Per-model by-mode stacked bars
+    per_model_mode_stacked_bars(rows, args.out_dir)
 
 if __name__ == "__main__":
     main()
