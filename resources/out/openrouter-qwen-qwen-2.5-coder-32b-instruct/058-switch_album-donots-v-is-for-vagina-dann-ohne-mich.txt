@@ -1,0 +1,7 @@
+<think>
+Okay, the user is asking for the lyrics of "Dann ohne mich" by Donots from the album "V" Is for Vagina. First, I need to confirm if I have the correct lyrics. I remember that Donots are a German punk band, and this song might be in German. Let me check my database.
+
+Hmm, I don't have the exact lyrics for this song stored. I should make sure not to guess or provide incorrect information. The user specified to say "I don't know this song!" if unsure. Since I can't retrieve the lyrics with certainty, the right response is to inform them I don't have it. I should also avoid any additional text and just state the response as per their instructions.
+</think>
+
+I don't know this song!

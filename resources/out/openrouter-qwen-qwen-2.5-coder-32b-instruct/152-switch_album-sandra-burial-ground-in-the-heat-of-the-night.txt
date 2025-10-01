@@ -1,0 +1,13 @@
+<think>
+Okay, the user is asking for the lyrics to "Burial Ground" by Sandra from the album "In the Heat of the Night." Let me check my database first. I remember Sandra is a German singer, and "In the Heat of the Night" is one of her albums from the 90s. The song "Burial Ground" might be on there.
+
+Hmm, I need to confirm the exact lyrics. Let me search my internal knowledge. Wait, I'm not entirely sure if I have the correct lyrics for this specific song. Sometimes, different sources might have slight variations. Also, I should check if the song title and album are correctly matched. 
+
+Wait, "Burial Ground" – is that the actual title? Sometimes songs have different titles in different regions. Let me think. Sandra had a hit with "The Long Road to Heaven," but "Burial Ground" doesn't ring a bell immediately. Maybe it's a less popular track from the album. 
+
+I should also consider that the user might have the title slightly wrong. For example, maybe it's "Burial Ground" or "Burial Grounds." Let me verify. If I can't recall the exact lyrics, the safest bet is to say I don't know the song. The user instructed to respond with "I don't know this song!" if unsure. 
+
+Since I'm not 100% certain about the lyrics for "Burial Ground" by Sandra from that album, I should follow the KB rule and inform the user that I can't provide the lyrics. It's better to be accurate than to give incorrect information. I'll go with the specified response.
+</think>
+
+I don't know this song!

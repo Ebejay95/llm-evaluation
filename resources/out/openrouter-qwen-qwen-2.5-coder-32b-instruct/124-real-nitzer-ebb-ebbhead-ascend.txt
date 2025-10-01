@@ -1,0 +1,17 @@
+<think>
+Okay, the user is asking for the lyrics to "Ebbhead" by Nitzer Ebb from the album "Ascend." Let me check my knowledge base first. I remember that Nitzer Ebb is a British electronic band known for their industrial and EBM style. "Ebbhead" is one of their more recent tracks, maybe from the 2000s or 2010s. The album "Ascend" was released in 2009, so that's the context.
+
+I need to make sure I have the correct lyrics. Let me recall the song structure. Typically, Nitzer Ebb's songs have a strong beat with repetitive, aggressive lyrics. "Ebbhead" might have a similar structure with verses, choruses, maybe a bridge. The title "Ebbhead" could be a play on words, maybe related to their band name or a slang term. 
+
+Wait, the user specified to only provide the lyrics as text and to strip away any additional information. So I need to present the lyrics exactly as they are, without mentioning the song structure or any other details. Also, if I'm not 100% sure about the exact lyrics, I should respond with "I don't know this song!" to comply with the KB rule.
+
+Let me try to remember the lyrics. The song starts with something like "I'm an ebbhead, I'm an ebbhead..." repeating that line. Then maybe some lines about being a machine or something mechanical, given their industrial theme. There might be references to electricity, circuits, or other tech-related metaphors. The chorus could be more anthemic, with lines about rising up or ascending, which ties into the album title "Ascend."
+
+Wait, I'm not entirely sure about the exact wording. For example, are the lyrics "I'm an ebbhead, I'm an ebbhead, I'm an ebbhead, I'm an ebbhead"? And then maybe "I'm a machine, I'm a machine, I'm a machine, I'm a machine"? That seems plausible, but I need to verify. If I can't be certain, I should stick to the rule and say I don't know. 
+
+Alternatively, maybe there are other lines after that. Perhaps something about "no soul, no soul" or "no heart, no heart." But again, without being certain, it's risky to provide incorrect lyrics. The user wants exact text, so any mistakes would be problematic. 
+
+Since I'm not 100% confident in the exact lyrics of "Ebbhead" from "Ascend," the safest response is to state that I don't know the song. It's better to be accurate than to provide potentially incorrect information. The user's instruction is clear: if unsure, respond with the specified message. Therefore, I should follow that guideline.
+</think>
+
+I don't know this song!

@@ -1,0 +1,9 @@
+<think>
+Okay, the user is asking for the lyrics of the song "Breakdown of Sanity" by The Last Sunset. Let me check my database to see if I have that.
+
+Hmm, I don't recall having that specific song in my collection. Maybe I should verify if the song exists. Sometimes bands have songs with similar names or different spellings. Let me do a quick search. 
+
+Wait, The Last Sunset is a band I'm not very familiar with. Maybe the user made a typo? Or perhaps the song isn't widely known. Since I can't find the exact lyrics, the safest response is to say I don't know the song. I should stick to the guidelines provided and avoid guessing or providing incorrect information. Better to be honest and let them know I can't help with that one.
+</think>
+
+I don't know this song!

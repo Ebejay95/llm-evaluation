@@ -1,0 +1,11 @@
+<think>
+Okay, the user is asking for the lyrics of "Aurora Parade" by Endless Scenes Project. Let me check my database.
+
+First, I need to confirm the exact song title and artist. The user mentioned "Endless Scenes Project, Aurora Lights, Aurora Parade." Wait, "Aurora Lights" might be part of the title or a different song. Let me verify.
+
+Looking up "Endless Scenes Project Aurora Parade" in my database... Hmm, I don't find an exact match. There's a band called Endless Scenes Project, but their known songs don't include "Aurora Parade." Maybe the user confused the title with another song? There's a song called "Aurora" by some artists, but not this band. 
+
+Alternatively, maybe "Aurora Lights" is the album or another song. Let me check if "Aurora Parade" exists. Still no results. The user might be mixing up the titles. Since I can't find the lyrics, the correct response is to say "I don't know this song!" as per the KB instruction. I should avoid providing incorrect lyrics. So, the answer is to state that I don't know the song.
+</think>
+
+I don't know this song!

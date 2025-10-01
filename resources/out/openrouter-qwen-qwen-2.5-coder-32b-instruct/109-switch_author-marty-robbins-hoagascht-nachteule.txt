@@ -1,0 +1,7 @@
+<think>
+Okay, the user is asking for the lyrics of a song by Marty Robbins called "Hoagascht, Nachteule." First, I need to check if I know this song. Marty Robbins is a country singer known for hits like "El Paso," but "Hoagascht, Nachteule" doesn't ring a bell. The title seems to have German words—Hoagascht might be a misspelling or a term I'm not familiar with. Nachteule translates to "night owl" in English. Maybe the user is referring to a song with that title, but I can't recall any by Marty Robbins with that name.
+
+I should verify if this song exists. A quick mental check of Marty Robbins' discography doesn't show this title. It's possible the user might have the title slightly wrong or confused with another song. Since I can't find the lyrics, the best response is to inform them that I don't know the song. I need to make sure I don't provide incorrect lyrics. Also, the user specified to only return the lyrics as text if known, so I should stick to that instruction. Therefore, the correct answer here is to state that I don't know the song.
+</think>
+
+I don't know this song!

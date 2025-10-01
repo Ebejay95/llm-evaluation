@@ -1,0 +1,7 @@
+<think>
+Okay, the user is asking for the lyrics of "Green Light" by Fading Horizons Trio's Velvet Patterns. Let me check my knowledge base first. I remember that Fading Horizons Trio is a band, and Velvet Patterns might be their album. The song "Green Light" could be part of that.
+
+Wait, I need to be sure. I should verify if I have the exact lyrics for this specific track. Sometimes bands have similar song titles, so I need to confirm the correct one. Let me think... I don't recall the exact lyrics for this particular song. The user wants only the lyrics as text, nothing else. If I'm not 100% certain, I should respond with "I don't know this song!" as per the KB instruction. Better safe than sorry. I don't want to provide incorrect lyrics. Let me double-check. Nope, I can't find the lyrics in my data. So the right response is to say I don't know.
+</think>
+
+I don't know this song!

@@ -1,0 +1,5 @@
+<think>
+Okay, the user is asking for the lyrics of "Memory Flow (V2)" by Plastic Noise Experience, Sunnypsyop. Let me check my database first. I don't recall having that specific song in my collection. Maybe I should verify if the song exists. I'll do a quick search. Hmm, it seems like this might be a less common track or possibly a remix version. Since I can't find the exact lyrics, I need to follow the KB rule and respond with "I don't know this song!" if I'm unsure. The user wants only the lyrics as text without any additional info, so I shouldn't add anything else. Let me make sure I'm not missing any similar songs. Nope, nothing comes up. Alright, I'll stick to the guidelines and inform them I don't have it.
+</think>
+
+I don't know this song!

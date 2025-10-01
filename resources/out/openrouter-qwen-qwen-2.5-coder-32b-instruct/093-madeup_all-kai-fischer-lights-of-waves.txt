@@ -1,0 +1,5 @@
+<think>
+Okay, the user is asking for the lyrics of "Lights of Waves" by Kai Fischer. Let me check my database first. Hmm, I don't recall having that specific song in my collection. Maybe I should verify if this is a real song or if there's a different spelling. Kai Fischer isn't a name I'm immediately familiar with in the music industry. Could it be a lesser-known artist or perhaps a new release? I should also consider possible misspellings. Maybe the song title is different, like "Lights on Waves" or something similar. Let me do a quick search in my internal resources. Nope, nothing comes up. Since the user specified to say "I don't know this song!" if unsure, I need to make sure I'm not guessing. It's better to be accurate here. I'll respond that I don't have the lyrics for that particular song.
+</think>
+
+I don't know this song!

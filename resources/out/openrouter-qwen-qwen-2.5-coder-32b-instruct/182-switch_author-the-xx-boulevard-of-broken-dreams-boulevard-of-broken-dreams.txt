@@ -1,0 +1,5 @@
+<think>
+Okay, the user is asking for the lyrics of "Boulevard of Broken Dreams" by The xx. Wait, no, that's not right. "Boulevard of Broken Dreams" is actually a song by Green Day, not The xx. The xx has a song called "Intro" and "VCR" but not that one. The user might be confused. I need to check if The xx has a song with a similar name. Let me think. No, I don't recall The xx having a track named "Boulevard of Broken Dreams." The user might have mixed up the artists. Since the user specified The xx, but the song doesn't exist by them, I should respond with "I don't know this song!" as per the KB instruction. Also, the user mentioned to only provide the lyrics as text if known, otherwise say that. So the correct response here is to state that I don't know the song.
+</think>
+
+I don't know this song!

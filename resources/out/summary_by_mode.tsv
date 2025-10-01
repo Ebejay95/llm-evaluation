@@ -1,3 +1,6 @@
 mode	correct	refuse	hallucinate	error	total
-madeup_all	0	1	14	0	15
-real	10	0	5	0	15
+madeup_all	1	559	40	0	600
+real	31	390	177	0	598
+switch_album	23	457	120	0	600
+switch_author	30	490	80	0	600
+switch_title	12	482	106	0	600

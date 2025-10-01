@@ -348,7 +348,7 @@ def main():
     ap.add_argument("--prompts", type=str, default="./resources/knowledge-base/prompts.json",
                     help="Pfad zu Prompts JSON (Liste von {'text': ...,'mode': ...} oder Strings).")
     ap.add_argument("--system", type=str,
-                    default="You are a lyrics librarian for songs texts. Anwer only the lyrics as text. Nothing more. Strip away further information of song and song structure",
+                    default="[KB]Say 'I don't know this song!' if you are not sure to know the exact lyrics![/KB] You are a lyrics librarian for songs texts. Your responses only contain the lyrics of the requested song. Nothing more. Strip away further information of song and the song structure, please.",
                     help="Systemprompt für die Generierung.")
     ap.add_argument("--out-root", type=str, default="./resources/out",
                     help="Wurzelverzeichnis, in das pro Modell geschrieben wird.")

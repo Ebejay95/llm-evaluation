@@ -22,7 +22,7 @@
 # openrouter/deepseek/deepseek-chat,openrouter/deepseek/deepseek-r1,openrouter/openai/chatgpt-4o-latest,openrouter/openai/gpt-4o,openrouter/openai/gpt-4,openrouter/anthropic/claude-3.7-sonnet,openrouter/mistralai/mistral-large-2411,openrouter/meta-llama/llama-3.1-8b-instruct,openrouter/meta-llama/llama-3.1-70b-instruct,openrouter/meta-llama/llama-3.1-405b-instruct,openrouter/qwen/qwen-2.5-7b-instruct,openrouter/qwen/qwen-2.5-72b-instruct,openrouter/qwen/qwen-2.5-coder-32b-instruct,openrouter/google/gemini-2.5-pro,openrouter/nousresearch/hermes-3-llama-3.1-70b
 
 # 1) generate prompts json some prompts from db and permuataions or al made ups...
-python3 ./generate_prompts.py 
+python3 ./generate_prompts.py --limit 200
 
 # 2) prompt all of them seq to models and catch result text and calc jaccard coverage as metric
 python3 eval_coverage.py \

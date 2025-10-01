@@ -1,10 +1,802 @@
 [
   {
-    "text": "Linkin Park, Hybrid Theory, In the End",
+    "text": "Akira Yamaoka, Time's Arrow",
+    "mode": "switch_album"
+  },
+  {
+    "text": "Alan Walker, Projects In The Jungle, Takin' My Life",
+    "mode": "switch_author"
+  },
+  {
+    "text": "All The Damn Vampires, All The Damn Vampires & Yota, Tame You",
     "mode": "real"
   },
   {
-    "text": "Cheering Tomatos, Mind is in a salat bowl, Live in the supper pot",
+    "text": "Anthony Rother, Simulationszeitalter, Fall Down, Never Get Back Up Again",
+    "mode": "switch_title"
+  },
+  {
+    "text": "Anti-Flag, Die For The Government, Drink Drank Punk",
+    "mode": "real"
+  },
+  {
+    "text": "Arcane Roots, Final Solution - Cloud 149",
+    "mode": "switch_author"
+  },
+  {
+    "text": "As I Lay Dying, Awakened, Whispering Silence",
+    "mode": "real"
+  },
+  {
+    "text": "As I Lay Dying, Frail Words Collapse, Song 10",
+    "mode": "real"
+  },
+  {
+    "text": "ASP, Fremd, Eisige Wirklichkeit",
+    "mode": "real"
+  },
+  {
+    "text": "Ava Monroe, Endless Dreams, Silver Motors",
     "mode": "madeup_all"
+  },
+  {
+    "text": "Ava Rossi, Silver Fables, Silent Windows",
+    "mode": "madeup_all"
+  },
+  {
+    "text": "Ava Valen, Scenes of Lights, White Room",
+    "mode": "madeup_all"
+  },
+  {
+    "text": "Beginner, Nightmare Revisited, This Is Halloween",
+    "mode": "switch_author"
+  },
+  {
+    "text": "Billy Talent, Billy Talent II, Worker Bees",
+    "mode": "real"
+  },
+  {
+    "text": "Bit Pie, Atlas, Blue and the Grey",
+    "mode": "switch_author"
+  },
+  {
+    "text": "Black Label Society, Stronger Than Death, Windows #43",
+    "mode": "switch_title"
+  },
+  {
+    "text": "Blondie, Body And Soul, The Hardest Part",
+    "mode": "switch_album"
+  },
+  {
+    "text": "Bob Seger, The Fodder Song, Words (Of The Dying)",
+    "mode": "switch_author"
+  },
+  {
+    "text": "Boy Harsher, Careful, The Terminal",
+    "mode": "switch_title"
+  },
+  {
+    "text": "Braindead Sound Machine, Come Down From the Hills and Make My Baby, Useless",
+    "mode": "switch_title"
+  },
+  {
+    "text": "Brand New, Leaked Demos 2006, Interlude",
+    "mode": "switch_title"
+  },
+  {
+    "text": "Brand New, The Devil And God Are Raging Inside Me, Jesus Christ",
+    "mode": "real"
+  },
+  {
+    "text": "Breakdown of Sanity, Perception, Deliverance (feat",
+    "mode": "real"
+  },
+  {
+    "text": "Breakdown of Sanity, The Last Sunset, Break",
+    "mode": "real"
+  },
+  {
+    "text": "Breaking Benjamin, Ghost Empire, Who We Are",
+    "mode": "switch_author"
+  },
+  {
+    "text": "Breaking Benjamin, We Are Not Alone, Sooner Or Later",
+    "mode": "real"
+  },
+  {
+    "text": "Broilers, Noir, Alienation",
+    "mode": "switch_title"
+  },
+  {
+    "text": "Brother Ali, The Undisputed Truth, Man in the Box",
+    "mode": "switch_title"
+  },
+  {
+    "text": "Cage, Mayhem, I Never Knew You",
+    "mode": "switch_album"
+  },
+  {
+    "text": "Calamari Safari, Poultrygeist - Night of the Chicken Dead, Interlude",
+    "mode": "switch_title"
+  },
+  {
+    "text": "Caliban, I Am Nemesis, Edge Of Black (Remix)",
+    "mode": "real"
+  },
+  {
+    "text": "Caliban, The Undying Darkness, My Fiction Beauty",
+    "mode": "real"
+  },
+  {
+    "text": "Callejon, Man spricht Deutsch, Schwule Mädchen",
+    "mode": "real"
+  },
+  {
+    "text": "Calvin Scott, Herefore, Thing About Me",
+    "mode": "switch_album"
+  },
+  {
+    "text": "Candlebox, Candlebox, Blue Light",
+    "mode": "switch_title"
+  },
+  {
+    "text": "Candlebox, Candlebox, Velvet Waves",
+    "mode": "switch_title"
+  },
+  {
+    "text": "Casper, Ein bisschen Frieden, Im Ascheregen",
+    "mode": "switch_album"
+  },
+  {
+    "text": "Concrete Blonde, Gran Turismo, My Favourite Game",
+    "mode": "switch_author"
+  },
+  {
+    "text": "Crimson Patterns Project, Lights of Motors, Green Sky",
+    "mode": "madeup_all"
+  },
+  {
+    "text": "Crimson Scenes Trio, Paper Skylines",
+    "mode": "madeup_all"
+  },
+  {
+    "text": "Crying Vessel, Tigermouth, Selfless",
+    "mode": "switch_album"
+  },
+  {
+    "text": "Crystal Lights Orchestra, Midnight Fragments, Neon Scenes",
+    "mode": "madeup_all"
+  },
+  {
+    "text": "Curve, Gift, Sacred Trickster",
+    "mode": "switch_title"
+  },
+  {
+    "text": "Curve, Horror Head, Rooms #96",
+    "mode": "switch_title"
+  },
+  {
+    "text": "Curve, In Schwarz, Falling Free",
+    "mode": "switch_album"
+  },
+  {
+    "text": "Daft Punk, Get Lucky, Get Lucky - Radio Edit",
+    "mode": "real"
+  },
+  {
+    "text": "Dark Tranquillity, Construct, For Broken Words",
+    "mode": "real"
+  },
+  {
+    "text": "Dark Tranquillity, Fiction, Misery's Crown",
+    "mode": "real"
+  },
+  {
+    "text": "Davey Pubic, Time to Go Home, Drone",
+    "mode": "switch_author"
+  },
+  {
+    "text": "Defeater, Letters Home, No Relief",
+    "mode": "real"
+  },
+  {
+    "text": "Deichkind, Bitte ziehen sie durch, Careless",
+    "mode": "switch_title"
+  },
+  {
+    "text": "Diana Gitallog, Popular Problems",
+    "mode": "switch_author"
+  },
+  {
+    "text": "Diana Gitallog, Été Rouge, Été Rouge (feat",
+    "mode": "real"
+  },
+  {
+    "text": "Die Goldenen Zitronen, Gute Menschen, Gute Menschen",
+    "mode": "switch_author"
+  },
+  {
+    "text": "Digital Patterns Quartet, Lights of Shadows",
+    "mode": "madeup_all"
+  },
+  {
+    "text": "Digital Shadows Trio, Aurora Dreams",
+    "mode": "madeup_all"
+  },
+  {
+    "text": "Dixie Normous, Fight With Tools, You Need Eight Inches (To Take This Ride)",
+    "mode": "switch_album"
+  },
+  {
+    "text": "Donots, “V” Is for Vagina, Dann ohne mich",
+    "mode": "switch_album"
+  },
+  {
+    "text": "Dope, Group Therapy, Galaxy",
+    "mode": "switch_title"
+  },
+  {
+    "text": "Drake, Clone Your Lover, God Bless the Models",
+    "mode": "switch_author"
+  },
+  {
+    "text": "Dream Theater, Bout It, Streets Are Watching",
+    "mode": "switch_author"
+  },
+  {
+    "text": "Electric Dreams Orchestra, Paper Waves",
+    "mode": "madeup_all"
+  },
+  {
+    "text": "Electric Fragments Orchestra, Wandering Skylines, Prelude",
+    "mode": "madeup_all"
+  },
+  {
+    "text": "Electric Six, Switzerland, Slices of You",
+    "mode": "real"
+  },
+  {
+    "text": "Emerald Waves Orchestra, Emerald Parade, Green River",
+    "mode": "madeup_all"
+  },
+  {
+    "text": "Endless Scenes Project, Aurora Lights, Aurora Parade",
+    "mode": "madeup_all"
+  },
+  {
+    "text": "Enigma, Found In Far Away Places, Identity",
+    "mode": "switch_author"
+  },
+  {
+    "text": "Enzo Hayes, Silent Stories, Epilogue",
+    "mode": "madeup_all"
+  },
+  {
+    "text": "Enzo Novak, Midnight Windows, Green Sky",
+    "mode": "madeup_all"
+  },
+  {
+    "text": "Fading Echoes Collective, Endless Gardens, Skylines #74",
+    "mode": "madeup_all"
+  },
+  {
+    "text": "Fading Fables Project, Crimson Scenes, Black Line",
+    "mode": "madeup_all"
+  },
+  {
+    "text": "Fading Horizons Trio, Velvet Patterns, Green Light",
+    "mode": "madeup_all"
+  },
+  {
+    "text": "Fading Scenes Project, Scenes of Fables, Red Line",
+    "mode": "madeup_all"
+  },
+  {
+    "text": "Feine Sahne Fischfilet, Sinfonie Des Wahnsinns, Ich glaube dir",
+    "mode": "switch_album"
+  },
+  {
+    "text": "Fettes Brot, Massive Attack, Home Of The Whale",
+    "mode": "switch_author"
+  },
+  {
+    "text": "Fever Rooms Orchestra, Dreams of Lights, Fragments #32",
+    "mode": "madeup_all"
+  },
+  {
+    "text": "Fjørt, D'accord, Schnaiserkitt",
+    "mode": "real"
+  },
+  {
+    "text": "Flobots, Vision Thing, There's A War Going On For Your Mind",
+    "mode": "switch_album"
+  },
+  {
+    "text": "Golden Letters Project, Signals of Signals",
+    "mode": "madeup_all"
+  },
+  {
+    "text": "Golden Rooms Trio, Paper Skylines, Lights #66",
+    "mode": "madeup_all"
+  },
+  {
+    "text": "Grossstadtgeflüster, Wenn die Nacht am tiefsten, Halt dich an deiner Liebe fest",
+    "mode": "switch_author"
+  },
+  {
+    "text": "Grotus, Mass, Wiild Bill",
+    "mode": "real"
+  },
+  {
+    "text": "Hednoize, 22-09-12 Off, Crushed",
+    "mode": "switch_author"
+  },
+  {
+    "text": "Huddle of Crudd, I Glued My Balls to My Butthole Again, I Glued My Balls to My Butthole Again",
+    "mode": "switch_author"
+  },
+  {
+    "text": "Hundredth, Let Go, Restless",
+    "mode": "real"
+  },
+  {
+    "text": "Hundredth, When Will We Surrender, Willows",
+    "mode": "real"
+  },
+  {
+    "text": "Hurts, The Ultimate Monty Python Rip Off, Always Look On The Bright Side Of Life",
+    "mode": "switch_author"
+  },
+  {
+    "text": "INXS, Kick, Believe",
+    "mode": "switch_title"
+  },
+  {
+    "text": "Itchy Poopzkid, Jen, Jen",
+    "mode": "switch_author"
+  },
+  {
+    "text": "Jerkstore, Scorpio Rising, Hands Around My Throat",
+    "mode": "switch_author"
+  },
+  {
+    "text": "Jon Lajoie, You Want Some of This, I Don't Understand",
+    "mode": "real"
+  },
+  {
+    "text": "Just Mustard, Heart Under, Synapse",
+    "mode": "switch_title"
+  },
+  {
+    "text": "Kai Fischer, Lights of Waves",
+    "mode": "madeup_all"
+  },
+  {
+    "text": "Kai Rossi, Crimson Horizons, White Sky",
+    "mode": "madeup_all"
+  },
+  {
+    "text": "Kav, Dirty Rejects (feat. Zombie Boy), Hope Leaves",
+    "mode": "switch_title"
+  },
+  {
+    "text": "Kav, Dirty Rejects (feat. Zombie Boy), White Room",
+    "mode": "switch_title"
+  },
+  {
+    "text": "Kelli Ali, Equal Vision Records Presents - New Sounds 2011, Lucifer Rising",
+    "mode": "switch_album"
+  },
+  {
+    "text": "King Missile, Maverick, Detachable Penis",
+    "mode": "switch_album"
+  },
+  {
+    "text": "Kip Tyler, Metal Gear Solid 3 - Snake Eater Original Soundtrack, She's My Witch",
+    "mode": "switch_album"
+  },
+  {
+    "text": "KIZ, Hurra die Welt geht unter, Eyes",
+    "mode": "switch_title"
+  },
+  {
+    "text": "Lena Moreau, Paper Scenes, Intro",
+    "mode": "madeup_all"
+  },
+  {
+    "text": "Lera Lynn, The Avenues, Wandering Letters",
+    "mode": "switch_title"
+  },
+  {
+    "text": "Levi Valen, Silver Motors, Intro",
+    "mode": "madeup_all"
+  },
+  {
+    "text": "Linkin Park, Hybrid Theory, White Room",
+    "mode": "switch_title"
+  },
+  {
+    "text": "Lords of Acid, Dead Or Alive, The Real Thing",
+    "mode": "switch_album"
+  },
+  {
+    "text": "Lunar Aurora, Hoagascht, Patterns #84",
+    "mode": "switch_title"
+  },
+  {
+    "text": "Mareux, BLOODY STREAM, The Perfect Girl",
+    "mode": "switch_album"
+  },
+  {
+    "text": "Marilyn Manson, The Golden Age Of Grotesque, Pulmonary Archery",
+    "mode": "switch_title"
+  },
+  {
+    "text": "Marty Robbins, Hoagascht, Nachteule",
+    "mode": "switch_author"
+  },
+  {
+    "text": "Massive Attack, Schwarzmaler, Insel Freiheit",
+    "mode": "switch_author"
+  },
+  {
+    "text": "MC1R, Believe, Force Of Inertia (I'd Be Disappointed If I Cared Enough Remix By Fix8Sed8)",
+    "mode": "switch_album"
+  },
+  {
+    "text": "Midnight Rooms Club, Waves of Stories, Crystal Echoes",
+    "mode": "madeup_all"
+  },
+  {
+    "text": "Milo Fischer, Electric Stories",
+    "mode": "madeup_all"
+  },
+  {
+    "text": "Mina Sato, Hidden Echoes",
+    "mode": "madeup_all"
+  },
+  {
+    "text": "Ministry, Psalm 69, Black Sky",
+    "mode": "switch_title"
+  },
+  {
+    "text": "Mint Royale, Dark Passion Play, The Poet And The Pendulum",
+    "mode": "switch_author"
+  },
+  {
+    "text": "Mr Little Jeans, Ashes Of The Wake, Hourglass",
+    "mode": "switch_author"
+  },
+  {
+    "text": "Mxmtoon, No Name Face, Hanging by a Moment",
+    "mode": "switch_author"
+  },
+  {
+    "text": "My Life With the Thrill Kill Kult, Buy Beg or Steal",
+    "mode": "switch_author"
+  },
+  {
+    "text": "Neon Horizons Trio, Emerald Dreams",
+    "mode": "madeup_all"
+  },
+  {
+    "text": "Neon Windows Collective, Hollow Windows, Red River",
+    "mode": "madeup_all"
+  },
+  {
+    "text": "New Model Army, Impurity, Lurhstaap",
+    "mode": "real"
+  },
+  {
+    "text": "Nine Inch Nails, Once More with Feeling - Singles 1996-2004, Twenty Years",
+    "mode": "switch_author"
+  },
+  {
+    "text": "Nitzer Ebb, Ebbhead, Ascend",
+    "mode": "real"
+  },
+  {
+    "text": "Noah Fischer, Skylines of Fables",
+    "mode": "madeup_all"
+  },
+  {
+    "text": "Noah Khan, Scenes of Fables, Intro",
+    "mode": "madeup_all"
+  },
+  {
+    "text": "Of Mice & Men, Of Mice & Men, Black Light",
+    "mode": "switch_title"
+  },
+  {
+    "text": "OK KID, OK KID, Am Ende",
+    "mode": "real"
+  },
+  {
+    "text": "OK KID, OK KID, Leave Them All Behind",
+    "mode": "switch_title"
+  },
+  {
+    "text": "Oleander, Joyride, Fountain & Vine",
+    "mode": "real"
+  },
+  {
+    "text": "Opeth, Ghost Reveries, Atonement",
+    "mode": "real"
+  },
+  {
+    "text": "Pantera, I Am The Night, Crimson Shadows",
+    "mode": "switch_title"
+  },
+  {
+    "text": "Parcels, There is a Hell Believe Me I've Seen It. There is a Heaven Let's Keep it a Secret, Myenemy",
+    "mode": "switch_album"
+  },
+  {
+    "text": "Pendulum, Hold Your Colour, Sounds Of Life (Ft",
+    "mode": "real"
+  },
+  {
+    "text": "Pendulum, Hold Your Colour, Through The Loop",
+    "mode": "real"
+  },
+  {
+    "text": "Placebo, No. 4, Special Needs",
+    "mode": "switch_album"
+  },
+  {
+    "text": "Plastic Noise Experience, Sunnypsyop, Memory Flow (V2",
+    "mode": "switch_album"
+  },
+  {
+    "text": "Pleasure Symbols, Closer and Closer Apart, Image Reflected",
+    "mode": "real"
+  },
+  {
+    "text": "Prinz Pi, Daydream Nation",
+    "mode": "switch_author"
+  },
+  {
+    "text": "Puscifer, Kunstraub, Fake Affront",
+    "mode": "switch_album"
+  },
+  {
+    "text": "Ra, From One, Rectifier",
+    "mode": "real"
+  },
+  {
+    "text": "Ramones, Death Magic, Stonefist",
+    "mode": "switch_author"
+  },
+  {
+    "text": "Rantanplan, Der Weg einer Freiheit, Antifa Fanclub",
+    "mode": "switch_album"
+  },
+  {
+    "text": "Regurgitator, Shadow Zone, The Song Formerly Known As",
+    "mode": "switch_album"
+  },
+  {
+    "text": "Remy Fischer, Hollow Motors, Skylines #39",
+    "mode": "madeup_all"
+  },
+  {
+    "text": "Remy Ishida, Digital Shadows",
+    "mode": "madeup_all"
+  },
+  {
+    "text": "Revolting Cocks, Sex-O Olympic-O, Clipped",
+    "mode": "switch_title"
+  },
+  {
+    "text": "Right Said Fred, D.W.I.S, I'm Too Sexy",
+    "mode": "switch_album"
+  },
+  {
+    "text": "Rise Against, ...And Justice For All, Voices Off Camera",
+    "mode": "switch_album"
+  },
+  {
+    "text": "Röyksopp, Papillon, What Else Is There",
+    "mode": "switch_album"
+  },
+  {
+    "text": "SamHaiNe presents, Rag Doll Blues, Scissors",
+    "mode": "switch_author"
+  },
+  {
+    "text": "Sandra, Burial Ground, In the Heat of the Night",
+    "mode": "switch_album"
+  },
+  {
+    "text": "Seahaven, TRUNK THERAPY, Black & White",
+    "mode": "switch_album"
+  },
+  {
+    "text": "Silent Patterns Project, Electric Shadows, Black Light",
+    "mode": "madeup_all"
+  },
+  {
+    "text": "Silver Lights Club, Wandering Rooms, Signals #14",
+    "mode": "madeup_all"
+  },
+  {
+    "text": "Sister Machine Gun, Metropolis, Zeitmaschinen aus Müll",
+    "mode": "switch_title"
+  },
+  {
+    "text": "Ska-P, 99%, Radio Falacia",
+    "mode": "real"
+  },
+  {
+    "text": "Skindred, Babylon, Nobody",
+    "mode": "real"
+  },
+  {
+    "text": "Skinny Puppy, The Process, Given In Death",
+    "mode": "switch_title"
+  },
+  {
+    "text": "Slipknot, Alannah Myles, Goodbye",
+    "mode": "switch_album"
+  },
+  {
+    "text": "Stabbing Westward, Darkest Days, Vice Grip",
+    "mode": "switch_title"
+  },
+  {
+    "text": "Stephen Lynch, Burial Ground, Waiting",
+    "mode": "switch_album"
+  },
+  {
+    "text": "Stereo MCs, One of Us Is the Killer",
+    "mode": "switch_album"
+  },
+  {
+    "text": "Stick Figure, Burial Ground, Waiting For You",
+    "mode": "switch_title"
+  },
+  {
+    "text": "Stick To Your Guns, The Hope Division, White Light",
+    "mode": "switch_title"
+  },
+  {
+    "text": "Still Corners, Pubic Fruit, Strange Pleasures",
+    "mode": "switch_album"
+  },
+  {
+    "text": "Stray From The Path, Jerks Rule!!, Crazy",
+    "mode": "switch_author"
+  },
+  {
+    "text": "Sunglasses Kid, Unpredictable, Golden Letters",
+    "mode": "switch_title"
+  },
+  {
+    "text": "Sunna, 2525 (Exordium & Terminus), In the Year 2525 (Exordium & Terminus)",
+    "mode": "switch_author"
+  },
+  {
+    "text": "System of a Down, The Colour and the Shape, Everlong",
+    "mode": "switch_author"
+  },
+  {
+    "text": "Testify, My Boy, Don't Go Back",
+    "mode": "switch_author"
+  },
+  {
+    "text": "The Baboons, Herefore, Herefore",
+    "mode": "switch_author"
+  },
+  {
+    "text": "The Clash, Hits Back, I Fought the Law",
+    "mode": "real"
+  },
+  {
+    "text": "The Glitch Mob, Evil Empire, Between Two Points (feat",
+    "mode": "switch_album"
+  },
+  {
+    "text": "The Glitch Mob, We Can Make The World Stop - EP, Cliff Notes",
+    "mode": "switch_title"
+  },
+  {
+    "text": "The Hillbilly Moon Explosion, Happy Hour, Bop Til You Drop",
+    "mode": "switch_album"
+  },
+  {
+    "text": "The Offspring, Ixnay On The Hombre, Wir müssen hier raus",
+    "mode": "switch_title"
+  },
+  {
+    "text": "The Prodigy, A Little Peace, Jericho",
+    "mode": "switch_album"
+  },
+  {
+    "text": "The Raveonettes, True Romance (Part One), Lust",
+    "mode": "switch_album"
+  },
+  {
+    "text": "The Truth, Scorpio Rising, Hands Around My Throat",
+    "mode": "switch_author"
+  },
+  {
+    "text": "The Used, Joyride, Maybe Memories",
+    "mode": "switch_album"
+  },
+  {
+    "text": "The xx, Boulevard Of Broken Dreams, Boulevard Of Broken Dreams",
+    "mode": "switch_author"
+  },
+  {
+    "text": "Theo Moreau, Digital Motors, Prelude",
+    "mode": "madeup_all"
+  },
+  {
+    "text": "Theo Rossi, Fever Horizons, Electric Shadows",
+    "mode": "madeup_all"
+  },
+  {
+    "text": "Thom Yorke, Full Circle, Stitches",
+    "mode": "switch_author"
+  },
+  {
+    "text": "Twenty One Pilots, Blurryface, Heavydirtysoul",
+    "mode": "real"
+  },
+  {
+    "text": "Twenty One Pilots, Vessel, Holding On To You",
+    "mode": "real"
+  },
+  {
+    "text": "Type O Negative, Evil Empire",
+    "mode": "switch_album"
+  },
+  {
+    "text": "Von Brücken, Kein Mensch ist Illegal, Hometown",
+    "mode": "switch_title"
+  },
+  {
+    "text": "Walls of Jericho, Meth, No Saving Me",
+    "mode": "switch_album"
+  },
+  {
+    "text": "We Butter The Bread With Butter, Der Tag an dem die Welt unterging, Kids",
+    "mode": "switch_title"
+  },
+  {
+    "text": "Wolf Alice, Army of Mushrooms, I Shine",
+    "mode": "switch_author"
+  },
+  {
+    "text": "Wolf Alice, Blue Weekend, Smile",
+    "mode": "real"
+  },
+  {
+    "text": "Yeht Mae, Eam They, Aurora Scenes",
+    "mode": "switch_title"
+  },
+  {
+    "text": "Yota, Cut, The Vibe",
+    "mode": "switch_album"
+  },
+  {
+    "text": "Yota, Lucid Dreams, One By One",
+    "mode": "real"
+  },
+  {
+    "text": "Yung Gravy, Marvelous, It's Written",
+    "mode": "switch_title"
+  },
+  {
+    "text": "Zoe Hayes, Scenes of Skylines",
+    "mode": "madeup_all"
+  },
+  {
+    "text": "Zoe Nguyen, Aurora Letters",
+    "mode": "madeup_all"
+  },
+  {
+    "text": "結束バンド, Lest We Forget - The Best Of, Rock Is Dead",
+    "mode": "switch_author"
   }
 ]

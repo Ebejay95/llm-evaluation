@@ -104,6 +104,7 @@ def _iter_tracks_recursive(album_dir: Path, max_depth: int) -> Iterable[str]:
             continue
 
         if p.is_file():
+            # Hinweis: Hier könnte man optional Dateiendungen filtern.
             title = clean_name(p.stem if p.suffix else p.name)
             if title:
                 yield title
@@ -135,12 +136,10 @@ def _iter_tracks_recursive(album_dir: Path, max_depth: int) -> Iterable[str]:
 
 def find_tracks(album_dir: Path, max_depth: int = 2) -> List[str]:
     """Finde Track-(Dateien/Ordner) unterhalb eines Albums und liefere bereinigte Titelnamen."""
-    # set() um Duplikate zu vermeiden (z. B. "01 Intro.flac" + Ordner "Intro")
     tracks_set: Set[str] = set()
     for t in _iter_tracks_recursive(album_dir, max_depth=max_depth):
         if t:
             tracks_set.add(t)
-    # stabile, fallunabhängige Sortierung
     return sorted(tracks_set, key=lambda s: s.casefold())
 
 # --- Synthetic text helpers ---------------------------------------------------
@@ -199,6 +198,8 @@ def main() -> None:
     parser.add_argument("--dry-run", action="store_true", help="Nur Ausgabe auf STDOUT, nicht schreiben")
     parser.add_argument("--synthetic", type=int, default=500, help="Anzahl zusätzlich zu generierender synthetischer Prompts (Default: 500; 0 zum Deaktivieren)")
     parser.add_argument("--max-depth", type=int, default=2, help="Rekursionstiefe für Track-Suche (Default: 2)")
+    # NEU: finale Begrenzung mit fairer Verteilung über 'mode'
+    parser.add_argument("--limit", type=int, default=200, help="Maximale Anzahl finaler Prompts, gleichmäßig über 'mode' verteilt (Default: 200; 0=keine Begrenzung)")
     args = parser.parse_args()
 
     random.seed(42)  # deterministischer Default
@@ -266,7 +267,6 @@ def main() -> None:
         if not all_albums or len(artists) < 2:
             return False
         src_artist, src_album = random.choice(all_albums)
-        # Neuen Artist wählen
         candidates = list(artists - {src_artist})
         if not candidates:
             return False
@@ -283,7 +283,6 @@ def main() -> None:
         if not all_albums:
             return False
         src_artist, src_album = random.choice(all_albums)
-        # Wähle irgendein *anderes* Album (von gleichen oder anderen Artists)
         other = random.choice([pair for pair in all_albums if pair != (src_artist, src_album)])
         new_album = other[1]
         tracks = tracks_by_key.get((src_artist, src_album), [])
@@ -299,14 +298,11 @@ def main() -> None:
             return False
         src_artist, src_album = random.choice(all_albums)
         existing_tracks = tracks_by_key.get((src_artist, src_album), [])
-        # Ziel: anderer Titel als bestehend
         new_title = None
         if all_tracks and random.random() < 0.7:
-            # nimm einen Track von irgendwo anders
             a2, al2, t2 = random.choice([t for t in all_tracks if not (t[0] == src_artist and t[1] == src_album)])
             new_title = t2
         else:
-            # erfinde
             tries = 0
             while tries < 5:
                 cand = _random_track_title()
@@ -315,7 +311,6 @@ def main() -> None:
                     break
                 tries += 1
             if new_title is None:
-                # Fallback: wenn keine Tracks existieren, machen wir eh einen
                 new_title = _random_track_title()
         return add_prompt(f"{src_artist}, {src_album}, {new_title}", "switch_title")
 
@@ -330,7 +325,33 @@ def main() -> None:
         if maker():
             made += 1
 
-    # --- Sortierung stabil nach Text, JSON schreiben ---
+    # --- Downsampling (gleichmäßig über 'mode') -------------------------------
+    if args.limit and args.limit > 0 and len(prompts) > args.limit:
+        from collections import defaultdict
+        grouped = defaultdict(list)
+        for p in prompts:
+            grouped[p["mode"]].append(p)
+
+        rng = random.Random(42)
+        modes = sorted(grouped.keys())
+        for m in modes:
+            rng.shuffle(grouped[m])
+
+        selected: List[Dict[str, str]] = []
+        indices = {m: 0 for m in modes}
+
+        while len(selected) < args.limit and any(indices[m] < len(grouped[m]) for m in modes):
+            for m in modes:
+                if len(selected) >= args.limit:
+                    break
+                i = indices[m]
+                if i < len(grouped[m]):
+                    selected.append(grouped[m][i])
+                    indices[m] += 1
+
+        prompts = selected
+
+    # --- Sortierung stabil nach Text, JSON schreiben --------------------------
     prompts.sort(key=lambda x: x["text"].casefold())
     output_json = json.dumps(prompts, ensure_ascii=False, indent=2)
 

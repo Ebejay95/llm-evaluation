@@ -1,0 +1,9 @@
+<think>
+Okay, the user is asking for the lyrics to "Lunar Aurora" by Hoagascht, specifically Patterns #84. Let me start by checking if I have that in my database. I remember that Hoagascht is a band known for their ambient and experimental music, so the song might not have traditional lyrics. First, I need to confirm the exact title and track. Sometimes tracks are numbered, like Patterns #84, which might be part of a series.
+
+I'll search my internal knowledge base for "Lunar Aurora Hoagascht Patterns 84 lyrics." Hmm, I don't recall any specific lyrics for that track. Hoagascht's music often uses atmospheric sounds and minimal vocals, so maybe the song is instrumental. Alternatively, there might be some spoken word or abstract vocals without clear lyrics. 
+
+I should also consider if the user might have the title slightly wrong. Maybe it's part of an album called "Patterns" and the track number is 84. Let me check if there's an album by Hoagascht named "Patterns" with that track. If I can't find any lyrics, the correct response would be to say "I don't know this song!" as per the user's instruction. Since the user emphasized to only provide the lyrics as text and nothing else, I need to be precise. If there's no lyrics, I must respond accordingly without adding extra information. I don't want to guess or fabricate lyrics, so if I'm unsure, the proper answer is to state that I don't know.
+</think>
+
+I don't know this song!

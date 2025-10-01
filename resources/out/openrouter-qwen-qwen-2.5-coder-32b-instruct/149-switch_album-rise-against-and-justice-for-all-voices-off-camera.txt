@@ -1,0 +1,9 @@
+<think>
+Okay, the user is asking for the lyrics to "Voices Off Camera" by Rise Against from the album "...And Justice For All". First, I need to confirm if I have the correct song. I remember that Rise Against is a punk rock band, and "...And Justice For All" is one of their well-known albums. However, I should check if "Voices Off Camera" is actually a track on that album.
+
+Wait, I think the album "...And Justice For All" by Metallica is a different band. The user might be confusing the band names. Rise Against's album "The Sufferer & the Witness" includes the song "The Good Left and the Bad Left". Maybe the user mixed up the band and album names. Alternatively, "Voices Off Camera" could be a different song. Let me verify.
+
+Looking up the tracklist for Rise Against's albums, I don't see a song titled "Voices Off Camera". The user might have the title or album wrong. Alternatively, maybe it's a B-side or a live version. Since I can't find the exact lyrics for "Voices Off Camera" by Rise Against, I should respond with the standard message: "I don't know this song!" as per the KB instruction. It's important to ensure accuracy and not provide incorrect lyrics. The user might need to double-check the song title or artist.
+</think>
+
+I don't know this song!

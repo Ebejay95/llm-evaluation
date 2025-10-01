@@ -1,0 +1,9 @@
+<think>
+Okay, the user is asking for the lyrics of "Prelude" by Electric Fragments Orchestra from the album "Wandering Skylines." First, I need to check if I have the correct lyrics for this specific song. I remember that sometimes preludes or instrumental tracks might not have lyrics, but maybe this one does. Let me search my database.
+
+Hmm, I don't find any lyrics for "Prelude" by Electric Fragments Orchestra. It's possible that the song is instrumental, which would explain the lack of lyrics. Alternatively, maybe the user is referring to a different track or there's a mix-up with the title. I should verify if there's any other song with a similar name. Let me double-check.
+
+No, there's no matching lyrics for that exact title and artist. The user might have the title slightly wrong or the song might not have any lyrics. Since the user specified to say "I don't know this song!" if unsure, I should respond accordingly. It's best to inform them that the lyrics aren't available in my database for that particular song.
+</think>
+
+I don't know this song!

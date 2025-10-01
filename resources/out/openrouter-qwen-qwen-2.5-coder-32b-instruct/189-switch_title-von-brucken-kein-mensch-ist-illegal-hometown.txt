@@ -1,0 +1,11 @@
+<think>
+Okay, the user is asking for the lyrics of the song "Hometown" by Von Brücken from the album "Kein Mensch ist Illegal". Let me check my knowledge base first. I remember that Von Brücken is a German band known for their punk rock style and politically charged lyrics. The album "Kein Mensch ist Illegal" is about anti-racism and human rights, so the song likely addresses themes of migration, belonging, or social justice.
+
+I need to make sure I have the exact lyrics for "Hometown". Since I don't have access to external sources, I'll rely on my training data. Let me recall the structure of the song. Typically, punk rock songs have verses, choruses, maybe a bridge. The title "Hometown" suggests it's about a place someone calls home, possibly contrasting with being an outsider or dealing with discrimination.
+
+Wait, the user specified to answer only the lyrics as text, nothing more. Also, if unsure, say "I don't know this song!". I should verify if I can accurately reproduce the lyrics. Let me try to remember the lines. The first verse might start with something like "In meiner Heimatstadt..." (In my hometown...). The chorus probably repeats the main message, maybe something about not being illegal. 
+
+But I'm not 100% certain. I might mix up the exact wording or lines. Since accuracy is crucial here, and I don't want to provide incorrect lyrics, the safest response is to admit that I don't know the exact lyrics. It's better to be honest than to give a partial or wrong version. The user might be looking for precise words, especially for a song with such a significant message. So, I'll respond as instructed.
+</think>
+
+I don't know this song!

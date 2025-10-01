@@ -1,0 +1,11 @@
+<think>
+Okay, the user is asking for the lyrics to "Été Rouge" by Diana Gitallog, specifically the version featuring someone else. First, I need to check if I have the correct song. The title is "Été Rouge," which translates to "Red Summer" in English. Diana Gitallog is the artist, and there's a featured artist mentioned, but the user didn't specify who. 
+
+I should verify if this song exists. A quick search in my database... Hmm, I don't find any exact matches for "Diana Gitallog" and "Été Rouge." Maybe there's a typo in the name? Could it be "Diana Gitari" or another similar name? Also, "Été Rouge" might be a French song, so I need to check if there's a French artist with a similar name.
+
+Alternatively, maybe the user is referring to a different song with a similar title. For example, there's a song called "Été Rouge" by a French artist, but not Diana Gitallog. Since the user mentioned "feat," there's a collaboration involved. Without more details, it's hard to confirm. 
+
+Since I can't find the exact lyrics and the user instructed to say "I don't know this song!" if unsure, I should respond accordingly. It's possible the song is obscure or the name is misspelled. I'll stick to the guidelines and inform the user that I don't have the lyrics for that specific song.
+</think>
+
+I don't know this song!

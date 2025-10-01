@@ -1,0 +1,9 @@
+<think>
+Okay, the user is asking for the lyrics of "Emerald Waves Orchestra" by Emerald Parade from the album Green River. Let me check my database.
+
+Hmm, I don't have that specific song in my collection. Maybe the user misspelled the title or the artist? Let me verify. "Emerald Waves Orchestra" by Emerald Parade... I can't find any matching results. The album Green River might be a different band or a less-known artist. 
+
+Alternatively, the user might be referring to a song by The Grateful Dead, as they have an album called "Green River," but the song titles don't match. Or perhaps it's a local or independent band. Since I can't find the lyrics, I should inform the user that I can't retrieve the requested lyrics and suggest possible alternatives or corrections. But the user specified to answer only with the lyrics as text, so if I can't find it, I need to state that clearly without additional info. Wait, the user also said to strip away further information, so maybe just respond with "Lyrics not found" or similar. But the initial instruction says to answer only the lyrics as text. If there are no lyrics, then I should just say that. Let me confirm once more. No, there's no such song in my database. So the correct response is to indicate that the lyrics aren't available.
+</think>
+
+Lyrics not found.

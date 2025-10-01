@@ -1,0 +1,13 @@
+<think>
+Okay, the user is asking for the lyrics of "Breakdown of Sanity, Perception, Deliverance (feat..." but the title is cut off. I need to check if I have the correct song. The title seems a bit unclear. Maybe it's part of a longer title, like a collaboration. Let me search my database for songs with similar titles.
+
+First, "Breakdown of Sanity" could be a song by a band like The Black Keys or maybe a metal band. "Perception, Deliverance" might be part of the same title. The "(feat" part suggests a featured artist, but the name is missing. Without the full title or artist, it's hard to be certain. 
+
+I should check if there's a known song with that exact title. Let me look up "Breakdown of Sanity, Perception, Deliverance" in my lyrics database. Hmm, I don't find an exact match. There's a song by The Black Keys called "Breakdown of Sanity," but the rest of the title doesn't match. Maybe the user is referring to a different artist or a compilation track.
+
+Alternatively, the user might have made a typo or combined multiple song titles. "Perception" and "Deliverance" could be separate songs. Let me check each part separately. "Perception" by The Black Keys is a real song, and "Deliverance" might be another track. But the user is asking for a single song with all those parts in the title. 
+
+Since I can't find a song that exactly matches the provided title, the safest response is to say "I don't know this song!" as per the KB instruction. It's possible the user provided an incomplete or incorrect title, so I shouldn't guess or provide lyrics from similar songs without confirmation. I need to stick to the guidelines and only provide lyrics if I'm certain of the exact match.
+</think>
+
+I don't know this song!

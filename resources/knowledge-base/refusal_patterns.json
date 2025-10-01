@@ -1,24 +1,54 @@
 {
   "language": "multi",
-  "notes": "Regex-Muster für bewusste Verweigerungen (englisch & deutsch). Case-insensitive, re.DOTALL.",
+  "notes": "LLM refusal/uncertainty about unknown songs or inability to provide lyrics. Robust to hedging, emojis, punctuation, policy/copyright phrasing. Use with re.IGNORECASE | re.DOTALL.",
   "patterns": [
-    "i\\s+don'?t\\s+know\\s+(this|the)\\s+song",
-    "i\\s+do\\s+not\\s+know\\s+(this|the)\\s+song",
-    "i\\s+am\\s+not\\s+familiar\\s+with\\s+(this|the)\\s+song",
-    "cannot\\s+provide\\s+the\\s+lyrics",
-    "can\\s+not\\s+provide\\s+the\\s+lyrics",
-    "i\\s+can'?t\\s+provide\\s+the\\s+lyrics",
-    "sorry\\b.*\\b(i\\s+don'?t\\s+know|i\\s+can'?t\\s+provide)",
-    "unfortunately\\b.*\\b(i\\s+don'?t\\s+know|i\\s+can'?t)",
-    "i\\s+don'?t\\s+have\\s+access\\s+to\\s+the\\s+lyrics",
+    "(?:^|\\b)(?:i\\s*(?:do\\s*not|don't)\\s*know\\s*(?:what\\s*this\\s*song\\s*is|this\\s*song)|i\\s*am\\s*not\\s*familiar\\s*with\\s*(?:this|the)\\s*song|i\\s*don't\\s*recognize\\s*(?:this|the)\\s*(?:song|track|tune))\\b",
+    "(?:^|\\b)(?:i\\s*(?:can't|cannot|couldn't)\\s*(?:identify|recognize|place|name)\\b[^\\n]{0,60}\\b(?:song|track|tune))\\b",
+    "(?:^|\\b)(?:no\\s+idea|not\\s+sure|unsure)\\b[^\\n]{0,60}\\b(?:what\\s*(?:this|the)\\s*(?:song|track)\\s*is)\\b",
+    "(?:^|\\b)we\\s*(?:don't|do\\s*not)\\s*know\\b[^\\n]{0,60}\\b(?:the\\s*(?:song|track|tune))\\b",
+    "(?:^|\\b)(?:unable\\s*to\\s*(?:identify|recognize)\\b[^\\n]{0,60}\\b(?:song|track|tune))\\b",
 
-    "ich\\s+kenne\\s+(dieses|den)\\s+lied\\s+nicht",
-    "ich\\s+kenne\\s+den\\s+song\\s+nicht",
-    "ich\\s+weiß\\s+es\\s+nicht",
-    "ich\\s+weiss\\s+es\\s+nicht",
-    "kann\\s+die\\s+lyrics\\s+nicht\\s+bereitstellen",
-    "kann\\s+den\\s+songtext\\s+nicht\\s+bereitstellen",
-    "tut\\s+mir\\s+leid\\b.*\\b(kenn|kann\\s+nicht)",
-    "leider\\b.*\\b(kenn|kann\\s+nicht)"
+    "(?:^|\\b)i\\s*(?:can't|cannot|can\\s*not)\\s*(?:provide|share|give|show|reproduce|display|output)\\b[^\\n]{0,60}\\b(?:lyrics|lyric|song\\s*text)\\b",
+    "(?:^|\\b)i\\s*(?:don't\\s*have|do\\s*not\\s*have)\\s*access\\s*to\\s*(?:the\\s*)?(?:lyrics|song\\s*text)\\b",
+    "(?:^|\\b)i\\s*(?:can't|cannot)\\s*(?:find|locate|retrieve|fetch)\\b[^\\n]{0,40}\\b(?:lyrics|song\\s*text)\\b",
+    "(?:^|\\b)i\\s*(?:can't|cannot)\\s*(?:help|assist)\\s*with\\b[^\\n]{0,40}\\b(?:lyrics|song\\s*text)\\b",
+    "(?:^|\\b)i\\s*(?:can't|cannot)\\s*provide\\s*copyright(?:ed)?\\s*(?:lyrics|song\\s*text)\\b",
+    "(?:^|\\b)due\\s*to\\s*(?:copyright|policy|usage\\s*restrictions)\\b[^\\n]{0,80}\\b(?:can't|cannot)\\s*(?:provide|share)\\s*(?:lyrics|song\\s*text)\\b",
+
+    "(?:^|\\b)(?:sorry|apologies|unfortunately|i'?m\\s*afraid)\\b[^\\n]{0,80}\\b(?:i\\s*(?:don't\\s*know|can't|cannot)\\b[^\\n]{0,40}\\b(?:song|track|tune|lyrics))",
+
+    "(?:^|\\b)i\\s*don'?t\\s*have\\s*(?:that\\s*)?in\\s*my\\s*(?:data|knowledge\\s*base|training\\s*data|index)\\b[^\\n]{0,60}\\b(?:song|track|tune|lyrics)\\b",
+    "(?:^|\\b)not\\s*enough\\s*(?:context|information)\\b[^\\n]{0,60}\\bto\\s*(?:identify|determine)\\s*(?:the\\s*)?(?:song|track|tune)\\b",
+
+    "(?:^|\\b)(?:i\\s*don'?t\\s*know|i\\s*can'?t)\\b[^\\n]{0,6}[…\\.!?\\)\\]]?[^\\n]{0,80}\\b(?:song|track|tune|lyrics)\\b",
+
+    "(?:^|\\b)ich\\s*(?:kenne|kenn)\\s*(?:dies(?:es|en)\\s*)?(?:lied|song)\\s*nicht\\b",
+    "(?:^|\\b)ich\\s*(?:bin\\s*mit|mit)\\s*(?:dies(?:em|en)\\s*)?(?:lied|song)\\s*nicht\\s*vertraut\\b",
+    "(?:^|\\b)ich\\s*(?:erkenne|erkenn)\\s*(?:dies(?:es|en)\\s*)?(?:lied|song)\\s*nicht\\b",
+    "(?:^|\\b)ich\\s*(?:weiß|weiss)\\s*es\\s*nicht\\b[^\\n]{0,60}\\bwelches\\s*(?:lied|song)\\s*(?:das|dies)\\s*ist\\b",
+    "(?:^|\\b)kann\\s*(?:das\\s*)?(?:lied|den\\s*song)\\s*nicht\\s*(?:bestimmen|identifizieren)\\b",
+    "(?:^|\\b)wir\\s*kennen\\s*(?:dies(?:es|en)\\s*)?(?:lied|song)\\s*nicht\\b",
+
+    "(?:^|\\b)kann\\s*(?:die|den)\\s*(?:lyrics|song\\s*text|songtext|lied\\s*text|liedtext)\\s*nicht\\s*(?:bereitstellen|liefern|anzeigen|wiedergeben)\\b",
+    "(?:^|\\b)ich\\s*(?:kann|kann\\s*nicht)\\s*(?:die|den)\\s*(?:lyrics|songtext|liedtext)\\s*(?:nicht\\s*)?(?:finden|abrufen)\\b",
+    "(?:^|\\b)ich\\s*hab(?:e|')\\s*keinen\\s*zugang\\s*zu\\s*(?:den\\s*)?(?:lyrics|songtext|liedtext)\\b",
+    "(?:^|\\b)aufgrund\\s*von\\s*(?:urheberrecht|richtlinien)\\b[^\\n]{0,80}\\bkann\\s*ich\\s*(?:lyrics|songtext|liedtext)\\s*nicht\\s*(?:bereitstellen|teilen)\\b",
+
+    "(?:^|\\b)(?:tut\\s*mir\\s*leid|leider|entschuldigung)\\b[^\\n]{0,80}\\b(?:ich\\s*(?:kenn|kann\\s*nicht|kann\\s*es\\s*nicht))\\b[^\\n]{0,40}\\b(?:song|lied|lyrics|songtext|liedtext)\\b",
+
+    "(?:^|\\b)ohne\\s*weitere\\s*details\\s*kann\\s*ich\\b[^\\n]{0,60}\\b(?:das\\s*(?:lied|den\\s*song)\\s*nicht\\s*(?:bestimmen|identifizieren))\\b",
+    "(?:^|\\b)nicht\\s*genug\\s*(?:kontext|informationen)\\b[^\\n]{0,60}\\b(?:um\\s*(?:das\\s*)?(?:lied|den\\s*song)\\s*zu\\s*(?:bestimmen|identifizieren))\\b",
+
+    "(?:^|\\b)i\\s*(?:searched|looked\\s*up|checked)\\b[^\\n]{0,80}\\bbut\\s*(?:couldn't|could\\s*not|can't)\\s*(?:identify|find)\\b[^\\n]{0,60}\\b(?:the\\s*(?:song|lyrics))\\b",
+    "(?:^|\\b)habe\\s*gesucht\\b[^\\n]{0,80}\\baber\\s*(?:konnte\\s*nicht|kann\\s*nicht)\\s*(?:das\\s*lied\\s*identifizieren|lyrics\\s*finden)\\b",
+
+    "(?:^|\\b)please\\s*provide\\s*(?:more|additional)\\s*(?:context|details)\\b[^\\n]{0,80}\\b(?:to\\s*identify\\s*(?:the\\s*)?(?:song|track|tune))\\b",
+    "(?:^|\\b)gib\\s*bitte\\s*mehr\\s*(?:infos|informationen|details)\\b[^\\n]{0,80}\\b(?:um\\s*(?:das\\s*)?(?:lied|den\\s*song)\\s*zu\\s*(?:identifizieren|bestimmen))\\b",
+
+    "(?:^|\\b)(?:i\\s*(?:don't\\s*know|can't|cannot)|sorry|unfortunately|i'?m\\s*afraid)\\b[^\\n]{0,120}\\b(?:song|track|tune|lyrics)\\b",
+    "(?:^|\\b)(?:leider|tut\\s*mir\\s*leid|ich\\s*(?:kenne\\s*es\\s*nicht|kann\\s*nicht))\\b[^\\n]{0,120}\\b(?:song|lied|songtext|liedtext|lyrics)\\b",
+
+    "(?:^|\\b)i\\s*(?:only\\s*know|can\\s*only\\s*provide)\\b[^\\n]{0,60}\\b(?:a\\s*(?:short|brief)\\s*excerpt|part\\s*of\\s*the\\s*lyrics)\\b",
+    "(?:^|\\b)ich\\s*(?:kenne\\s*nur|kann\\s*nur)\\b[^\\n]{0,60}\\b(?:einen\\s*(?:kurzen|kleinen)\\s*(?:auszug|teil)\\s*der\\s*lyrics|des\\s*songtexts)\\b"
   ]
 }

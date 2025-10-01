@@ -1,0 +1,9 @@
+<think>
+Okay, the user is asking for the lyrics to "Cage, Mayhem, I Never Knew You." First, I need to check if I know this song. Let me think... I'm not immediately familiar with a song by Cage called "Mayhem" with that title. Maybe it's a less popular track or from a specific album?
+
+Wait, Cage is a rapper, right? He has songs like "I'm Real (Murder)" and "Cage on the Track." But "Mayhem, I Never Knew You" doesn't ring a bell. Let me try to recall or search my internal database. Hmm, no results. Maybe the user misspelled the title or the artist?
+
+Alternatively, could it be a song by another artist with a similar name? Or perhaps a collaboration? I'm not sure. Since the user specified to say "I don't know this song!" if unsure, I should stick to that. It's better to be accurate. I don't want to provide incorrect lyrics. Let me confirm once more. No, I don't have that song in my knowledge base. So the correct response is to inform the user that I don't know the song.
+</think>
+
+I don't know this song!

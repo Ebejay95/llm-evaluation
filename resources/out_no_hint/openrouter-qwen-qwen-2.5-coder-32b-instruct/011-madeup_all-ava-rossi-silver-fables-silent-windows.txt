@@ -1,0 +1,9 @@
+<think>
+Okay, the user is asking for the lyrics of "Silent Windows" by Ava Rossi from the album "Silver Fables." Let me start by confirming the correct song and artist. I need to make sure there's no confusion with similar names. Ava Rossi isn't a widely known artist, so maybe it's an indie or lesser-known track.
+
+First, I'll check if "Silver Fables" is indeed the album title and "Silent Windows" the song. Sometimes people mix up album and song titles. Next, I need to find the lyrics. Since I don't have direct access to external databases, I'll rely on my existing knowledge. If I don't remember the lyrics, I should inform the user that I can't provide them. But maybe I can recall some lines or structure.
+
+Wait, the user specified to answer only with the lyrics as text, nothing more, and to strip away song structure info. So if I can't find the exact lyrics, I should just state that I don't have them. Let me think... I don't recall the specific lyrics for this song. It's possible that the song isn't in my database or it's too obscure. To comply with the user's request, I should respond with that I can't provide the lyrics. Also, the user might have made a typo, but I have to assume the names are correct as given. So the safest answer is to say I don't have the lyrics for that specific track.
+</think>
+
+I don't have access to the lyrics for "Silent Windows" by Ava Rossi from the album *Silver Fables*. The song or artist may be obscure, or the lyrics may not be publicly available in my database.

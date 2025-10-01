@@ -1,0 +1,9 @@
+<think>
+Okay, the user is asking for the lyrics to "White Room" by Kav, Dirty Rejects featuring Zombie Boy. Let me check my database first. I remember that Kav is a rapper, and Dirty Rejects is a group he's part of. Zombie Boy is a featured artist here. The song "White Room" might be from their album.
+
+Wait, I need to make sure I have the correct song. Sometimes songs have similar titles. Let me verify the exact title and artists. The user specified "Kav, Dirty Rejects (feat. Zombie Boy), White Room". That seems specific enough. Now, I need to retrieve the lyrics. 
+
+I should check if the lyrics are available in my knowledge base. If not, I need to respond with "I don't know this song!" as per the instructions. Let me search... Hmm, I don't recall the exact lyrics for this track. I might not have it in my database. To be safe, I should confirm if I can provide the lyrics accurately. Since I'm not 100% sure, the correct response is to say I don't know the song. Better to be accurate than to provide incorrect lyrics.
+</think>
+
+I don't know this song!

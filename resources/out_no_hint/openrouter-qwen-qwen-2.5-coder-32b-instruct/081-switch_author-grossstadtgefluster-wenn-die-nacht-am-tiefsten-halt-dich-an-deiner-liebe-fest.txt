@@ -1,0 +1,19 @@
+<think>
+Okay, the user provided a query with some German lyrics. Let me see. The lines are "Grossstadtgeflüster, Wenn die Nacht am tiefsten, Halt dich an deiner Liebe fest." I need to figure out which song these lyrics are from.
+
+First, I recognize "Grossstadtgeflüster" as a song by Xavier Naidoo. The title translates to "Whispers of the City." The next line, "Wenn die Nacht am tiefsten," which means "When the night is deepest," and the third line "Halt dich an deiner Liebe fest" meaning "Hold on to your love tightly." 
+
+I should check if these are the exact lyrics from the song. Let me recall the song. Yes, the first lines of "Grossstadtgeflüster" by Xavier Naidoo start with those exact lines. The user is asking for the lyrics as text, stripped of any additional information. 
+
+I need to make sure I provide the correct lyrics without any formatting or extra details. The user wants only the lyrics text. Let me verify the full lyrics to ensure accuracy. The song is about city life, love, and finding hope in the darkest times. The lines given are from the beginning, so I should present them as they are, in German, without any song structure markers like verses or choruses. 
+
+Wait, the user mentioned to strip away further information of song and song structure. So just the raw lyrics. Let me confirm the exact lines again. The first line is "Grossstadtgeflüster," then "Wenn die Nacht am tiefsten," followed by "Halt dich an deiner Liebe fest." That's correct. 
+
+I should output only those lines as the answer. No need to add more unless the user specified more, but they only provided those three lines. So the response should be those three lines in German, each on a new line, without any additional text or formatting. 
+
+Double-checking for typos: "Grossstadtgeflüster" is spelled correctly. The other lines are also correctly phrased. Alright, that should be it.
+</think>
+
+Grossstadtgeflüster  
+Wenn die Nacht am tiefsten  
+Halt dich an deiner Liebe fest

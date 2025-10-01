@@ -1,0 +1,9 @@
+<think>
+Okay, the user is asking for the lyrics to "Always Look on the Bright Side of Life" by Hurts, which is a cover of the Monty Python song. First, I need to confirm if Hurts has a version of this song. Wait, the original song is from Monty Python's "Life of Brian," right? The user mentioned "The Ultimate Monty Python Rip Off," which might be a different song, but the main request is for "Always Look on the Bright Side of Life."
+
+I should check if Hurts has a version of this song. A quick search in my knowledge base... Hmm, I don't recall Hurts covering this song. Their style is more pop/rock, while the original is a comedic, folk-style song. Maybe the user is confused or there's a mix-up. The original lyrics are well-known, so perhaps they just want the original lyrics but mentioned Hurts by mistake.
+
+Since the user specified to say "I don't know this song!" if unsure, I should verify. Let me think again. Hurts has songs like "Stay" and "Wonderful Life," but not this one. The Monty Python version is the original. The user might have thought Hurts did a cover. Since there's no evidence of Hurts covering this song, I should respond that I don't know the song as per the instructions. However, maybe the user wants the original lyrics. But the user's query specifically mentions Hurts. To comply with the KB rule, I should state that I don't know the song by Hurts. If they want the original, they can ask for Monty Python's version. But according to the user's instructions, I should only provide the lyrics if I know the exact text. Since Hurts isn't associated with this song, I must respond accordingly.
+</think>
+
+I don't know this song!

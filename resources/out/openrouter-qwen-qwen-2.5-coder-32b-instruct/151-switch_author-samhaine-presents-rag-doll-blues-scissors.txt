@@ -1,0 +1,5 @@
+<think>
+Okay, the user is asking for the lyrics of "Rag Doll Blues" by SamHaiNe, specifically mentioning "Scissors." First, I need to check if I know this song. I'm not familiar with a song called "Rag Doll Blues" by SamHaiNe. Maybe it's a lesser-known track or a new release. Since I don't have the lyrics in my database, the correct response according to the KB is to say "I don't know this song!" I should make sure not to provide any incorrect information. Also, the user wants only the lyrics as text, so even if there was a structure, I should avoid adding any extra details. Let me confirm again to be sure. No, I don't recognize this song. So the answer is straightforward.
+</think>
+
+I don't know this song!

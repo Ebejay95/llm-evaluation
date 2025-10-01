@@ -1,0 +1,7 @@
+<think>
+Okay, the user is asking for the lyrics of "Lucid Dreams" by Yota, specifically "One By One." Wait, first I need to check if there's a song by Yota with that title. I'm not immediately familiar with a song called "Lucid Dreams" by an artist named Yota. Maybe there's a mix-up in the name? There's a popular song "Lucid Dreams" by Juice WRLD, but the user mentioned Yota. Let me verify.
+
+I should search my database for "Yota Lucid Dreams One By One." If I can't find it, I need to respond that I don't know the song. Since the user specified to say "I don't know this song!" if unsure, I have to be careful. Maybe the user confused the artist or the song title. Alternatively, maybe it's a less-known track. Without exact matching lyrics in my database, the safest answer is to state that I don't know the song. I should avoid providing incorrect lyrics. Let me confirm again. No, there's no match for Yota's "Lucid Dreams" in my records. So the correct response is to inform the user that I don't know this song.
+</think>
+
+I don't know this song!

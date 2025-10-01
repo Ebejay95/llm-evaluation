@@ -1,0 +1,9 @@
+<think>
+Okay, the user is asking for the lyrics of a song called "Midnight Rooms Club, Waves of Stories, Crystal Echoes." First, I need to check if I know this song. Let me think... I don't recall this exact title. It sounds like it might be a combination of different song titles or maybe a lesser-known track. Let me try to break it down.
+
+"Midnight Rooms Club" – that doesn't ring a bell. "Waves of Stories" – maybe part of a song? "Crystal Echoes" – I think there's a song by The Glitch Mob called "Crystal Echoes," but the other parts don't match. The user might have combined elements from different songs or misremembered the title. 
+
+I should verify if "Crystal Echoes" by The Glitch Mob is the intended song. The lyrics for that song are about technology and memories. However, the user's query includes other phrases that don't align with that. Since the exact title isn't matching any known songs in my database, and I can't confirm the correct lyrics, the safest response is to say "I don't know this song!" as per the KB instruction. It's better to avoid providing incorrect lyrics. I'll make sure to stick to the guidelines and only respond with the lyrics if I'm certain. Since I'm not sure, the correct answer here is to state that I don't know the song.
+</think>
+
+I don't know this song!

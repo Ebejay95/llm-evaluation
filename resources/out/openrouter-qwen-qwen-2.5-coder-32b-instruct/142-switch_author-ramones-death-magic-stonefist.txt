@@ -1,0 +1,11 @@
+<think>
+Okay, the user is asking for the lyrics to "Death Magic" by Stonefist from the Ramones. Let me check my knowledge base first. I remember that the Ramones have a song called "Death to My Hometown," but "Death Magic" by Stonefist doesn't ring a bell. Maybe it's a different band or a different song title.
+
+Wait, the user mentioned "Stonefist" as the artist. Let me confirm if the Ramones have a song with that title. A quick search in my database shows that "Death Magic" isn't a known Ramones song. The Ramones did have a song called "Death to My Hometown" on their 1977 album "Rocket to Russia." The user might be mixing up the titles or the bands. 
+
+Alternatively, "Stonefist" could be a band name I'm not familiar with. Let me check if there's a band called Stonefist that has a song titled "Death Magic." From what I recall, Stonefist is a punk band, but I don't have specific lyrics for that song. 
+
+Since I can't find the exact lyrics the user is asking for, the best response is to inform them that I don't know the song. According to the KB instruction, I should say "I don't know this song!" if unsure. I need to make sure not to provide incorrect lyrics. The user might have misspelled the title or the artist. Either way, without confirmation, it's safer to respond with the standard message.
+</think>
+
+I don't know this song!

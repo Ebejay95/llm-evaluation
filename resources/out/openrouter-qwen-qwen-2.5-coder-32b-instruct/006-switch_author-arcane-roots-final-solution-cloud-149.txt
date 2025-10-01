@@ -1,0 +1,9 @@
+<think>
+Okay, the user is asking for the lyrics to "Final Solution" by Arcane Roots from the album "Cloud 149". Let me check my knowledge base first. I remember that Arcane Roots is a British progressive rock band, and "Cloud 149" is one of their albums. The song "Final Solution" might be on there.
+
+Wait, I need to be careful here. The user specified to say "I don't know this song!" if I'm unsure. Let me verify. I'll search my internal data for the song title and album. Hmm, I don't have the exact lyrics for this specific track. I know some of their other songs, but not this one. 
+
+I should also consider that "Final Solution" might be a common phrase, so there could be other songs with the same name. But the user mentioned the album "Cloud 149", which is specific to Arcane Roots. Let me cross-check again. No, I don't have the lyrics stored for this particular song. To be safe, I should respond that I don't know the song as per the user's instruction. Better to be accurate than to provide incorrect lyrics.
+</think>
+
+I don't know this song!

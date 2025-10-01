@@ -1,0 +1,9 @@
+<think>
+Okay, the user is asking for the lyrics of a song titled "Yota, Cut, The Vibe." First, I need to check if I know this song. I'm not immediately familiar with it. Let me think. Yota might be a name, maybe an artist? Cut and The Vibe could be part of the title. I should verify if this is a real song.
+
+I'll try to recall any songs with similar titles. Maybe it's a recent track or from a less mainstream artist. Alternatively, there could be a typo in the title. Let me consider possible variations. If I can't find it, I should follow the KB instruction to say "I don't know this song!" if unsure.
+
+I don't remember any lyrics for "Yota, Cut, The Vibe." It's possible the user misspelled the title or the song is not in my database. To be safe, I'll respond that I don't know the song. I should avoid providing incorrect lyrics. Let me confirm once more. No, I don't have that in my knowledge base. So the correct response is to state that I don't know this song.
+</think>
+
+I don't know this song!

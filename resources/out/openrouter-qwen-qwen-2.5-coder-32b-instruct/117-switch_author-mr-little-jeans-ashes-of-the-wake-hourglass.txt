@@ -1,0 +1,7 @@
+<think>
+Okay, the user is asking for the lyrics of "Hourglass" by Mr. Little Jeans from the album "Ashes Of The Wake". First, I need to confirm if I have the correct song. Let me check my database.
+
+Hmm, "Hourglass" by Mr. Little Jeans... I don't recall the exact lyrics for this track. The album "Ashes Of The Wake" was released in 2008, and "Hourglass" is one of their songs. But I'm not 100% sure about the lyrics. The user wants only the lyrics as text, nothing else. Since I can't be certain, I should follow the KB rule and respond with "I don't know this song!" to avoid providing incorrect information. It's better to be safe and direct them to a reliable source for the lyrics.
+</think>
+
+I don't know this song!

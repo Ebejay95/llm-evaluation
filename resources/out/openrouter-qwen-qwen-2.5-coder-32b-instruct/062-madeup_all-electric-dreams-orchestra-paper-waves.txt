@@ -1,0 +1,15 @@
+<think>
+Okay, the user is asking for the lyrics to "Paper Waves" by Electric Dreams Orchestra. Let me start by checking if I have that in my database. I remember that Electric Dreams Orchestra is a band that blends electronic and orchestral elements, so their songs might have a unique structure.
+
+First, I'll search for the song title and artist to confirm the correct track. Sometimes songs have similar names, so it's important to be precise. "Paper Waves" doesn't ring a bell immediately. Maybe I should check if there's any album or release by them that includes this song. Let me think... I recall they have albums like "Electric Dreams" and "Synthetic Horizons," but I'm not sure if "Paper Waves" is on those.
+
+Alternatively, perhaps the user is referring to a different band or a cover. Wait, there's a song called "Paper Waves" by The Paper Kites, but that's a different genre. The user specified Electric Dreams Orchestra, so I need to stick to that. 
+
+I should also consider that maybe the song is less popular or from a recent release that's not in my database. Since I don't have access to external sources, I can't verify the lyrics right now. The user's instruction says to respond with "I don't know this song!" if unsure. I need to make sure I'm not making up lyrics. 
+
+Another angle: sometimes lyrics are split into verses, choruses, etc., but the user wants only the lyrics as text without structure. But since I don't have the actual lyrics, I should just state that I don't know. It's better to be accurate than to provide incorrect information. 
+
+So, after checking my internal knowledge, I don't recall the lyrics to "Paper Waves" by Electric Dreams Orchestra. Therefore, the correct response is to inform the user that I don't know the song.
+</think>
+
+I don't know this song!

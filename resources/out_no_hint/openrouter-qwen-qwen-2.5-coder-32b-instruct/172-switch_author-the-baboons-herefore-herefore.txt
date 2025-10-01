@@ -1,0 +1,5 @@
+<think>
+Okay, the user is asking for the lyrics of "Herefore" by The Baboons. Let me check my database. Hmm, I don't have that song in my current collection. The Baboons aren't a mainstream band, so their songs might not be widely available. I should let the user know I can't find the lyrics. But wait, maybe they want me to generate some? No, the user specifically asked for existing lyrics. I need to be clear that I can't provide them. Also, the user mentioned to answer only the lyrics as text and strip away other info. Since I don't have the lyrics, I should just state that I can't retrieve them. Let me make sure I don't add any extra information beyond that.
+</think>
+
+I cannot retrieve the lyrics for "Herefore" by The Baboons at this time.

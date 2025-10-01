@@ -1,0 +1,5 @@
+<think>
+Okay, the user is asking for the lyrics to "White Light" by Stick To Your Guns from the album "The Hope Division." Let me check my database. Hmm, I don't have the exact lyrics for that song. I remember that "The Hope Division" is their debut album, released in 2007, and "White Light" is one of the tracks. But I need to be sure. Maybe I can recall some lines? Wait, the user specified to say "I don't know this song!" if unsure. Since I can't retrieve the full lyrics accurately right now, I should follow the KB instruction. Let me confirm once more. No, I don't have the exact text. Better to respond as instructed.
+</think>
+
+I don't know this song!

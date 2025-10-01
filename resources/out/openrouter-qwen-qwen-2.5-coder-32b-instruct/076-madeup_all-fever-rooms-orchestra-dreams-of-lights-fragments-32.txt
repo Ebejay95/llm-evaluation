@@ -1,0 +1,9 @@
+<think>
+Okay, the user is asking for the lyrics of "Fever Rooms Orchestra, Dreams of Lights, Fragments #32". First, I need to check if I have that specific song in my database. Let me think... I'm not familiar with this exact title. The artist is Fever Rooms Orchestra, and the song is part of an album called "Dreams of Lights", track number 32. 
+
+Wait, maybe the user is referring to a specific piece from that album. But I don't recall the lyrics for this particular track. Since the user specified to say "I don't know this song!" if unsure, I should verify. Let me cross-check. Fever Rooms Orchestra isn't a mainstream band, so their lyrics might not be widely available. Also, "Fragments #32" sounds like it could be an instrumental or a less-known track.
+
+I should consider that the user might have the title slightly wrong or that the lyrics aren't in my database. To be safe, I should respond with the designated message. It's better to be accurate and avoid providing incorrect lyrics. So, the answer is to state that I don't know the song.
+</think>
+
+I don't know this song!

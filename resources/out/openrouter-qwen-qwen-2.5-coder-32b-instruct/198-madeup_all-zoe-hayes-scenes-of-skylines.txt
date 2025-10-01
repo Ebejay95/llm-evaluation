@@ -1,0 +1,11 @@
+<think>
+Okay, the user is asking for the lyrics to "Scenes of Skylines" by Zoe Hayes. Let me check my database first. Hmm, I don't recall having that specific song in my collection. Maybe I should verify if Zoe Hayes has a song with that title. I'll do a quick search.
+
+Wait, Zoe Hayes is a singer, but I'm not sure about a song called "Scenes of Skylines." Let me think. I might be mixing up the titles. There's a song by Zoe Hayes called "I'm Not Okay," but that's different. 
+
+I should check if there's any other artist with a similar name or song title. Maybe the user made a typo? "Scenes of Skylines" doesn't ring a bell. Let me confirm again. No, I don't have the lyrics for that particular song. 
+
+Since the user specified to say "I don't know this song!" if unsure, I need to respond accordingly. I should make sure not to provide incorrect lyrics. Better safe than sorry. Alright, I'll inform them that I don't have the lyrics for that song.
+</think>
+
+I don't know this song!

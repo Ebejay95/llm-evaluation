@@ -1,0 +1,9 @@
+<think>
+Okay, the user is asking for the lyrics of "Crystal Lights Orchestra" by Midnight Fragments, specifically the song "Neon Scenes." Let me check my database.
+
+Hmm, I don't have that song in my current collection. The user might have the title or artist wrong. Maybe it's a lesser-known track or a new release. I should confirm if the song exists. Let me search online quickly. 
+
+Wait, I can't browse the internet. Oh right, I'm limited to my training data. Since I don't have the lyrics, I need to inform the user politely. They might be looking for a specific song they remember but can't find. Maybe suggest checking the title or artist again. Or recommend where they can find the lyrics, like official sites or lyric platforms. But the user wants only the lyrics as text, nothing more. Since I can't provide the lyrics, I should just state that I don't have them. Make sure to follow their instruction strictly. No extra info. Just the lyrics. But since there are none, respond with that.
+</think>
+
+I don't have access to the lyrics for "Crystal Lights Orchestra" by Midnight Fragments, "Neon Scenes," or any other songs not included in my training data. Let me know if you'd like help with something else!

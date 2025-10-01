@@ -1,0 +1,5 @@
+<think>
+Okay, the user is asking for the lyrics of the song "Seahaven" by TRUNK THERAPY from the album "Black & White". First, I need to confirm if I have the correct lyrics. I'll check my database for that specific song and artist. Let me search... Hmm, I don't find an exact match for "Seahaven" by TRUNK THERAPY. Maybe the song has a different title or the artist's name is spelled differently. Let me try variations. TRUNK THERAPY isn't a very common name, so maybe it's a lesser-known band. The album "Black & White" could be a clue. I'll check if there's any song titled "Seahaven" in that album. Still nothing. It's possible that the song isn't in my database or the details provided are slightly off. Since the user specified to say "I don't know this song!" if unsure, I should respond accordingly. I don't want to provide incorrect lyrics. Let me make one last check. Nope, no results. So the correct response is to inform the user that I don't have the lyrics for that specific song.
+</think>
+
+I don't know this song!

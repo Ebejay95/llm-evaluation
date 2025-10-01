@@ -1,0 +1,5 @@
+<think>
+Okay, the user is asking for the lyrics of "Herefore" by The Baboons. Let me check my database. Hmm, I don't recall having that song in my collection. The Baboons aren't a mainstream band, so maybe the song isn't widely available. I should verify if I have any records of this song. Let me search again. Nope, nothing comes up. The user might have the title or artist wrong, but I can't assume that. Since I can't find the exact lyrics, the correct response according to the KB is to say "I don't know this song!" and provide nothing else. I need to make sure I don't include any extra information or guesses. Just the specified response.
+</think>
+
+I don't know this song!

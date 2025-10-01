@@ -1,0 +1,21 @@
+<think>
+Okay, the user is asking for the lyrics to "Fiction" by Dark Tranquillity from the album "Misery's Crown". Let me check my knowledge base first. I remember that Dark Tranquillity is a Swedish melodic death metal band, and "Fiction" is one of their songs. I need to make sure I have the correct lyrics.
+
+Wait, the user specified the album "Misery's Crown". Let me confirm that "Fiction" is indeed on that album. I think it is, but I should double-check. If I'm not 100% sure, I should respond with "I don't know this song!" as per the KB instructions. 
+
+Assuming the song is correct, I need to recall the lyrics. The song starts with something like "I'm a fiction, a shadow in the night..." Then there's a verse about being a ghost and a whisper. The chorus might have lines like "I'm a fiction, a lie that you believe..." 
+
+I need to make sure each line is accurate. Let me try to remember the structure: verses, choruses, maybe a bridge. The user wants only the lyrics as text, no extra info. I should avoid any formatting or song structure notes. 
+
+Wait, I'm not entirely certain about the exact wording. For example, is it "a shadow in the night" or "a shadow in the light"? Also, the bridge part might have different lines. If I'm unsure about any part, it's better to say I don't know. 
+
+Let me think again. The first verse: "I'm a fiction, a shadow in the night, I'm a ghost that haunts your memory." Then the chorus: "I'm a fiction, a lie that you believe, I'm a whisper in the silence that you can't perceive." The second verse might talk about a mirror and reflections. 
+
+I think the bridge has something like "I'm a fiction, a creation of your mind..." But I'm not 100% sure. If I can't recall the exact lines, I should respond with the KB message. Since I'm a bit uncertain about some parts, maybe I should play it safe and say I don't know. Alternatively, if I can reconstruct the lyrics accurately, then proceed. 
+
+Wait, another thought: sometimes lyrics can have slight variations in different versions. The user might have a specific version in mind. Without being certain, it's risky to provide incorrect lyrics. The user's instruction is to answer only the lyrics if I know them exactly, otherwise say I don't know. 
+
+Given that, and considering I'm not 100% confident in every line, I should respond with "I don't know this song!" to avoid providing incorrect information.
+</think>
+
+I don't know this song!

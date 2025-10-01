@@ -1,0 +1,11 @@
+<think>
+Okay, the user is asking for the lyrics of the song "Bitte ziehen sie durch" by Deichkind. Let me check if I have that in my database.
+
+First, I need to confirm the song title and artist. Deichkind is a German band, and "Bitte ziehen sie durch" is one of their songs. The user also mentioned "Careless," which might be a translation or a different title, but I should focus on the original German title.
+
+I recall that Deichkind's lyrics are often in German, so I need to make sure the lyrics are in the correct language. Let me search my internal database for the exact lyrics. If I can't find them, I should respond with "I don't know this song!" as per the instructions.
+
+Wait, I think I remember parts of the song. Let me try to recall. The song starts with something like "Bitte ziehen Sie durch, durch die Nacht..." but I'm not entirely sure about the full lyrics. To be safe, I should verify each line to ensure accuracy. If there's any doubt, it's better to say I don't know. Since I can't access external sources, I have to rely on my existing knowledge. I think I can provide the lyrics correctly, but I need to be careful not to make up any lines. Let me structure the response with the verses and choruses as they are, making sure each line is accurate.
+</think>
+
+I don't know this song!

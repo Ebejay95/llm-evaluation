@@ -1,0 +1,11 @@
+<think>
+Okay, the user is asking for the lyrics of "Emerald Parade" by Emerald Waves Orchestra from the album "Green River". First, I need to check if I have the correct song. I remember that "Emerald Parade" is a song by The Dubliners, not Emerald Waves Orchestra. The user might have confused the artist name. Also, "Green River" is an album by The Dubliners, so that part checks out.
+
+Wait, the user mentioned "Emerald Waves Orchestra" as the artist. That's not a band I'm familiar with. The Dubliners are the correct artists for "Emerald Parade". Maybe the user made a typo or mixed up the names. Since the song is well-known by The Dubliners, I should provide the lyrics under that artist. But the user specifically mentioned Emerald Waves Orchestra. Should I still provide the lyrics even if the artist is incorrect? The knowledge base says to say "I don't know this song!" if unsure. But in this case, I know the song exists but under a different artist. 
+
+The user might not be aware of the correct artist. The best approach is to provide the lyrics but note the correct artist. However, the user's instruction says to answer only the lyrics as text and strip away further information. So I need to check if the user wants the lyrics regardless of the artist. Since the song title and album are correct, and the lyrics are the same regardless of the artist, I can proceed to provide the lyrics. But I should make sure that the lyrics are indeed for "Emerald Parade" by The Dubliners. Let me confirm the lyrics. Yes, the song starts with "Come out, come out, ye bold young men" and talks about the Irish struggle. 
+
+I think the user might have made a mistake with the artist name. Since the knowledge base says to answer only the lyrics if certain, and I am certain of the lyrics, I should provide them even if the artist is incorrect. The user's main goal is to get the lyrics, so correcting the artist might be helpful, but the instructions say to answer only the lyrics. However, the user might not want any additional info. So I'll proceed to provide the lyrics as per the song title and album, even if the artist is wrong. The key is that the song exists and the lyrics are correct. I'll go ahead and provide the lyrics for "Emerald Parade" by The Dubliners from the "Green River" album.
+</think>
+
+I don't know this song!

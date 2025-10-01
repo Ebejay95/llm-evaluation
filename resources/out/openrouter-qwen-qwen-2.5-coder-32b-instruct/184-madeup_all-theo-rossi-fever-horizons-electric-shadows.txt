@@ -1,0 +1,5 @@
+<think>
+Okay, the user is asking for the lyrics to "Electric Shadows" by Theo Rossi from the album "Fever Horizons". First, I need to check if I have the correct lyrics for this song. I remember that Theo Rossi is an artist, but I'm not entirely sure about the exact lyrics of this particular track. Let me think... I might not have this one in my database. The user specified to say "I don't know this song!" if I'm unsure. Since I can't recall the lyrics off the top of my head and I don't have a reliable source here, it's safer to respond that I don't know the song. Better to be accurate than to provide incorrect lyrics. So, the answer should be "I don't know this song!".
+</think>
+
+I don't know this song!

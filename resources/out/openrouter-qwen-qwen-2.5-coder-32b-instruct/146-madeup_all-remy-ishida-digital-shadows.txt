@@ -1,0 +1,7 @@
+<think>
+Okay, the user is asking for the lyrics to "Digital Shadows" by Remy Ishida. Let me check my knowledge base first. I remember that Remy Ishida is a Brazilian artist, and "Digital Shadows" might be one of her songs. I need to make sure I have the correct lyrics.
+
+Wait, I'm not entirely sure about the exact lyrics. I think I've heard the song before, but I'm not 100% certain about every line. The user specified to say "I don't know this song!" if I'm unsure. Since I can't confirm the exact lyrics right now, I should respond accordingly. It's better to be accurate and avoid providing incorrect information. I'll let the user know I don't have the lyrics for that song.
+</think>
+
+I don't know this song!

@@ -1,0 +1,9 @@
+<think>
+Okay, the user is asking for the lyrics of a song by Itchy Poopzkid and Jen, Jen. First, I need to check if I have that information in my knowledge base. Let me think... I don't recall any specific song by these artists. Itchy Poopzkid might be a typo or a less-known artist. Jen, Jen could refer to the South Korean girl group, but I don't remember a collaboration between them and Itchy Poopzkid.
+
+I should verify if there's a song with that exact title and artists. Maybe the user misspelled the names? Let me consider possible variations. "Itchy Poopzkid" sounds like a playful or incorrect name. Perhaps they meant "Itchy Poop Kid" or another similar name? Also, Jen, Jen is a group, but their popular songs are usually in Korean or have different titles.
+
+Since I can't find any matching lyrics in my database for this specific combination, the safest response is to say "I don't know this song!" as per the KB instruction. It's important not to guess or provide incorrect lyrics. The user might need to double-check the song title or artist names for accuracy. I should stick strictly to the guidelines and only respond with the specified text without any additional information.
+</think>
+
+I don't know this song!

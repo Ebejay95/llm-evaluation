@@ -1,0 +1,5 @@
+mode	correct	refuse	hallucinate	error	total
+madeup_all	0	0	15	0	15
+real	10	1	4	0	15
+switch_album	0	3	12	0	15
+switch_author	4	4	22	0	30

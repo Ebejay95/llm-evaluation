@@ -1,0 +1,7 @@
+<think>
+Alright, the user is asking for the lyrics to "White Room" by Ava Valen from the album "Scenes of Lights." First, I need to confirm if I have the correct song. I'll check my database for Ava Valen's discography. "Scenes of Lights" is an album, and "White Room" is a track on it.
+
+Wait, I'm not entirely sure about the exact lyrics. Sometimes, different sources might have slight variations. Let me cross-reference a couple of reliable sources. Hmm, I don't see the exact lyrics for this specific song in my current knowledge base. The user provided the KB instruction to say "I don't know this song!" if unsure. Since I can't be 100% certain about the lyrics, I should follow the guideline and respond accordingly. It's better to be accurate than to provide possibly incorrect information. So, the correct response here is to inform the user that I don't know the lyrics for that specific song.
+</think>
+
+I don't know this song!

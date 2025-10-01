@@ -1,0 +1,9 @@
+<think>
+Okay, the user is asking for the lyrics of a song by Kelli Ali from the album "Equal Vision Records Presents - New Sounds 2011," specifically the track "Lucifer Rising." First, I need to check if I have the correct lyrics for this song. I remember that Kelli Ali is known for her work with The Sugarcubes and her solo projects, but I'm not entirely sure about the exact lyrics of "Lucifer Rising." 
+
+I should verify if this song is part of the "New Sounds 2011" compilation. Sometimes compilations include various artists, so I need to confirm that Kelli Ali is indeed the artist for this track. If I can't find the lyrics in my database, the correct response would be to say "I don't know this song!" as per the user's instructions.
+
+Looking up the song details, I see that "Lucifer Rising" is a track by Kelli Ali on that compilation. The lyrics might be from her album "The Turning," but I need to cross-check. The user wants only the lyrics as text, so I need to present them without any additional information. If I'm uncertain about any part of the lyrics, I should avoid guessing and stick to the response provided in the knowledge base. After checking, if I find the lyrics, I'll present them exactly as they are, ensuring no extra details are included.
+</think>
+
+I don't know this song!

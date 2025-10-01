@@ -1,0 +1,5 @@
+<think>
+Okay, the user is asking for the lyrics of "Lights of Shadows" by Digital Patterns Quartet. First, I need to check if I have that information in my knowledge base. I remember that Digital Patterns Quartet is a band, but I'm not sure about this specific song. Let me think... I don't recall the exact lyrics for this track. Maybe I should search my internal data again. Hmm, no, there's no record of those lyrics here. The user wants only the lyrics as text, nothing else. Since I can't be certain, the correct response according to the KB instruction is to say "I don't know this song!" I should make sure not to provide any partial lyrics or guesses. Just the straightforward response they specified.
+</think>
+
+I don't know this song!

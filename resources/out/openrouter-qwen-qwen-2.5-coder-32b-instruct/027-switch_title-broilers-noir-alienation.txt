@@ -1,0 +1,11 @@
+<think>
+Okay, the user is asking for the lyrics of the song "Alienation" by Broilers, from the album Noir. Let me check my database first. I remember that Broilers is a French electronic music duo, and Noir is their debut album. The track "Alienation" is one of their popular songs.
+
+I need to make sure I have the correct lyrics. Let me search through my stored data. Hmm, I don't see the exact lyrics here. Maybe I should verify if I have them at all. Wait, the user mentioned "Broilers, Noir, Alienation" so it's specific. Let me think if I've encountered this before. 
+
+I recall that Broilers' lyrics are often in French, but sometimes they mix English. "Alienation" might have some English parts. However, I'm not 100% certain about the exact wording. Since the user instructed to say "I don't know this song!" if unsure, I should be cautious. 
+
+I don't want to provide incorrect lyrics. Let me double-check. Maybe I can find a reliable source. But according to my knowledge cutoff, I might not have access to external sources. Since I can't confirm the exact lyrics, the safest response is to inform the user that I don't know the song. It's better to be accurate than to risk providing wrong information.
+</think>
+
+I don't know this song!

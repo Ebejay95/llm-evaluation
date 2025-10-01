@@ -1,0 +1,9 @@
+<think>
+Okay, the user is asking for the lyrics to "Silver Lights Club, Wandering Rooms, Signals #14". First, I need to check if I know this song. The title sounds a bit like it could be from a lesser-known artist or maybe a compilation track. Let me think... I don't recall this exact title. The structure with numbers at the end, like #14, makes me think it might be a mix or a specific track from an album that has numbered songs.
+
+I should verify if this is a real song. Sometimes people might mix up titles or include track numbers incorrectly. Let me search my database. Hmm, nothing comes up for "Silver Lights Club" with that exact title. There's a song called "Silver Lights" by some artists, but not this specific title. Also, "Wandering Rooms" could be part of a different song. 
+
+Since the user specified to say "I don't know this song!" if unsure, I should stick to that. It's possible the user made a typo or combined parts of different song titles. Without exact matching lyrics in my database, I can't provide the text. I need to make sure not to guess or provide incorrect information. So the correct response here is to inform the user that I don't know this song.
+</think>
+
+I don't know this song!

@@ -1,0 +1,5 @@
+<think>
+Okay, the user is asking for the lyrics of "Prelude" by Theo Moreau and Digital Motors. Let me check my database. Hmm, I don't recall having that specific song. I should verify if this is a real song. Theo Moreau is a French singer, and Digital Motors might be a band or a collaborator. Let me search for "Theo Moreau Digital Motors Prelude lyrics." Wait, I don't find any exact matches. Maybe the title is different or it's a lesser-known track. Alternatively, could there be a typo in the name? Let me check variations. Still nothing. Since I can't find the lyrics, the correct response is to say "I don't know this song!" as per the KB instruction. I need to make sure not to provide any incorrect information. The user wants only the lyrics as text, so if unsure, the answer is clear.
+</think>
+
+I don't know this song!

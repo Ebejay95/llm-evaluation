@@ -1,0 +1,9 @@
+<think>
+Okay, the user is asking for the lyrics of "The Hillbilly Moon Explosion" by Happy Hour from the album "Bop Til You Drop". Let me check my knowledge base first. I remember that Happy Hour is a band known for their country and rockabilly style. The song "The Hillbilly Moon Explosion" might be one of their more energetic tracks.
+
+Wait, I need to make sure I have the exact lyrics. Let me think. The title sounds like a fun, upbeat song with some hillbilly or country themes. The user wants only the lyrics, no extra info. But I'm not 100% certain about the exact words. I don't want to provide incorrect lyrics. The knowledge base instruction says to say "I don't know this song!" if unsure. 
+
+Hmm, I can't recall the specific lines. Maybe I should verify. But since I can't access external sources, I have to rely on my training data. I think I might not have the exact lyrics for this particular song. It's possible the user is referring to a less mainstream track or maybe there's a mix-up with the title. To be safe, I should respond that I don't know the song to avoid giving wrong information. Better to be honest than to provide incorrect lyrics.
+</think>
+
+I don't know this song!

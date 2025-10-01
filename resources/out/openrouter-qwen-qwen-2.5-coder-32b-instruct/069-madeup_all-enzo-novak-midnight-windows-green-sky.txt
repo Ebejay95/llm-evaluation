@@ -1,0 +1,5 @@
+<think>
+Okay, the user is asking for the lyrics of "Midnight Windows" by Enzo Novak from the album "Green Sky". First, I need to confirm if I have the correct lyrics. I'll check my database. Hmm, I don't recall having that specific song. Let me search again. No, there's no entry for Enzo Novak's "Midnight Windows". Maybe the user misspelled the song or artist? Or perhaps it's a less-known track. Since I can't find the lyrics, the best response is to say "I don't know this song!" as per the KB instruction. I should avoid making up lyrics or providing incorrect information. The user wants only the lyrics text, so if I'm unsure, I must stick to the guidelines.
+</think>
+
+I don't know this song!

@@ -1,0 +1,7 @@
+<think>
+Okay, the user is asking for the lyrics of "Aurora Dreams" by Digital Shadows Trio. First, I need to check if I have that information in my knowledge base. I remember that Digital Shadows Trio isn't a widely known artist, so the song might not be in my database. Let me search through my existing data.
+
+Hmm, I don't recall any entries for this specific song or artist. The user's request is straightforward—they just want the lyrics without any additional info. Since I can't find the lyrics, the correct response according to the KB instructions is to say "I don't know this song!" and avoid providing any extra details. I should make sure not to guess or fabricate the lyrics. Let me confirm once more to be certain. Nope, nothing comes up. Alright, time to respond as instructed.
+</think>
+
+I don't know this song!

@@ -1,0 +1,9 @@
+<think>
+Okay, the user is asking for the lyrics of "Voices Off Camera" by Rise Against from the album "...And Justice For All". Let me check if that's the correct track. Wait, I remember that "...And Justice For All" is actually a Metallica album. Rise Against has a song called "The Good Left and the Bad Left" on their album "Endgame", but there's no track named "Voices Off Camera" by Rise Against. Maybe the user confused the band or the album. Let me verify.
+
+Looking up Rise Against's discography, their album "Endgame" has songs like "The Good Left and the Bad Left" and "Ready to Fall". The user might have mixed up the band with Metallica, whose album is indeed "...And Justice For All". Metallica's song "Justice" is on that album, but there's no "Voices Off Camera" by them either. 
+
+Alternatively, maybe the user is referring to a different band or a different song. Since I can't find "Voices Off Camera" by Rise Against, I should inform them that the song doesn't exist in the database. But the user wants only the lyrics as text if available. Since it's not there, I need to respond that the lyrics aren't available. I should make sure to mention that the song might be a mix-up with another band or album. However, the user instructed to answer only the lyrics as text, nothing more. But since the lyrics aren't available, I have to state that. Maybe the user made a mistake in the song title. I'll proceed to inform them that the lyrics aren't found.
+</think>
+
+The requested lyrics for "Voices Off Camera" by Rise Against from the album "...And Justice For All" could not be found. It is possible there is confusion with the band, album, or song title.

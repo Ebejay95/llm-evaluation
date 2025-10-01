@@ -1,0 +1,5 @@
+<think>
+Okay, the user is asking for the lyrics of the song "Crying Vessel" by Tigermouth from the album "Selfless". Let me check if I have access to that. I need to make sure I provide only the lyrics as text, without any additional information like song structure or metadata. I should also verify the accuracy of the lyrics. If I can't find them, I should inform the user that I can't retrieve the lyrics. Let me search my database... Hmm, I don't have that specific song in my current data. I should respond that I can't provide the lyrics for that request.
+</think>
+
+I don't have access to the lyrics for "Crying Vessel" by Tigermouth from the album *Selfless*. Let me know if you'd like help with other song lyrics I can provide.

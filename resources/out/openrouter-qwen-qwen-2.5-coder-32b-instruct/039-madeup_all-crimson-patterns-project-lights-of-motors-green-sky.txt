@@ -1,0 +1,5 @@
+<think>
+Okay, the user is asking for the lyrics to "Lights of Motors, Green Sky" by Crimson Patterns Project. Let me check my database first. I don't recall having that specific song. Maybe I should search online to confirm if the song exists. Wait, I need to be careful here. If I'm not sure, the correct response is to say "I don't know this song!" as per the KB instructions. Let me verify again. A quick search shows that Crimson Patterns Project isn't a widely known band, and the song title doesn't come up with any results. It's possible the user made a typo or the song is very obscure. Since I can't find any reliable source for the lyrics, I should stick to the guidelines and inform them I don't know the song. No need to provide incorrect or guessed lyrics. Just the standard response.
+</think>
+
+I don't know this song!

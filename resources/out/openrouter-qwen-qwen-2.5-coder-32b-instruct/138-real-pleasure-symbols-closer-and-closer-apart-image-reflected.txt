@@ -1,0 +1,11 @@
+<think>
+Okay, the user is asking for the lyrics of the song "Closer and Closer Apart" by Pleasure Symbols, specifically mentioning "Image Reflected." Let me check my database.
+
+First, I need to confirm if I have the correct song. The title "Closer and Closer Apart" by Pleasure Symbols... Hmm, I'm not immediately finding a match. Maybe the user is referring to a different song with similar lyrics? Let me think. There's a song by The Human League called "Closer" that has the line "Image Reflected," but that's from the 80s. Wait, the user mentioned "Pleasure Symbols," which I don't recall as a known band. Could that be a typo or a lesser-known group?
+
+Alternatively, maybe the user is mixing up song titles. The line "Image Reflected" is from "Closer" by The Human League. Let me verify the lyrics. The Human League's "Closer" does have the line "Image reflected in the mirror of my mind." But the user specified "Pleasure Symbols," which isn't the correct artist. 
+
+Since the user is asking for "Pleasure Symbols" and the specific song, and I can't find any matching lyrics for that exact title and artist, I should respond that I don't know the song. It's possible there's a confusion with the artist name or the song title. To be safe, I'll stick to the instruction and say I don't know the song if I can't confirm the exact lyrics. The user might need to double-check the artist or title.
+</think>
+
+I don't know this song!
